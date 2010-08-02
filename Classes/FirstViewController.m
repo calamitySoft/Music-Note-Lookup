@@ -7,20 +7,24 @@
 //
 
 #import "FirstViewController.h"
+#import "Constants.h"
 
 
 @implementation FirstViewController
 
+@synthesize notePickerView, octavePickerView;
+@synthesize outputLabel, pickerViewLetterArray;
 
-/*
+
+
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
+
     }
     return self;
 }
-*/
+/**/
 
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -28,12 +32,21 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	pickerViewLetterArray = [[NSArray arrayWithObjects:
+							  @"A", @"A# / Bb",
+							  @"B", @"B# / Cb",
+							  @"C", @"C# / Db",
+							  @"D", @"D# / Eb",
+							  @"E", @"E# / Fb",
+							  @"F", @"F# / Gb",
+							  @"G", @"G# / Ab",
+							  nil] retain];
 }
-*/
+/**/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -57,7 +70,86 @@
 
 
 - (void)dealloc {
+	[notePickerView release];
+	[octavePickerView release];
+	[outputLabel release];
+	[pickerViewLetterArray release];
     [super dealloc];
 }
+
+#pragma mark -
+#pragma mark UIPickerViewDelegate
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+	if (pickerView == notePickerView)	// show selection for the note picker
+	{
+		// report the selection to the UI label		
+		outputLabel.text = [NSString stringWithFormat:@"%@ - %d",
+							[pickerViewLetterArray objectAtIndex:[notePickerView selectedRowInComponent:0]],
+							[notePickerView selectedRowInComponent:1]];
+	}
+}
+
+
+#pragma mark -
+#pragma mark UIPickerViewDataSource
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+	NSString *returnStr = @"";
+	
+	if (pickerView == notePickerView)
+	{
+		// Letter picker
+		if (component == 0)	{
+			returnStr = [pickerViewLetterArray objectAtIndex:row];
+		}
+		// Octave picker
+		else {
+			returnStr = [[NSNumber numberWithInt:row] stringValue];
+		}
+	}
+	
+	return returnStr;
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
+{
+	CGFloat componentWidth = 0.0;
+	
+	NSLog(@"component = %d", component);
+	
+	if (component == 0)
+		componentWidth = 280.0*kNotePickerRatio;	// first column size is wider to hold names
+	else
+		componentWidth = 280-(280*kNotePickerRatio);	// second column is narrower to show numbers
+	
+	return componentWidth;
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+{
+	return 40.0;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+	// Note letter
+	if (component == 0) {
+		return [pickerViewLetterArray count];
+	}
+	// Number of octaves
+	else {
+		return kNumOctaves;
+	}
+
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+	return 2;
+}
+
 
 @end

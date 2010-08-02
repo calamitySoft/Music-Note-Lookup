@@ -1,0 +1,15 @@
+# .gitignore suggestions from:
+# http://gist.github.com/137348
+
+# Xcode extras
+*.mode1v3
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.pyc
+*~.nib/
+build/*
+
+# OSX extras
+.DS_Store
+profile

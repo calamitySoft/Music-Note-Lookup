@@ -1,24 +1,24 @@
 TNoteToFreq
 v7
 r0
-t302317162.328698
+t302476982.729079
 cCheck dependencies
-cProcessInfoPlistFile /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/Info.plist NoteToFreq-Info.plist
-cCompileXIB /Users/sam/Desktop/Music-Note-Lookup/MainWindow.xib
-cCompileXIB /Users/sam/Desktop/Music-Note-Lookup/SecondView.xib
-cCompileXIB /Users/sam/Desktop/Music-Note-Lookup/FirstView.xib
-cProcessPCH /var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-djsotljbpbcjmjaidtpljuvqlhqu/NoteToFreq_Prefix.pch.gch NoteToFreq_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o /Users/sam/Desktop/Music-Note-Lookup/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o /Users/sam/Desktop/Music-Note-Lookup/Classes/NoteToFreqAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o /Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o /Users/sam/Desktop/Music-Note-Lookup/Classes/note.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq normal i386
-cGenerateDSYMFile /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
-cTouch /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app
+cProcessInfoPlistFile /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/Info.plist NoteToFreq-Info.plist
+cCompileXIB /Users/loganmoseley/Projects/MusicNoteLookup/MainWindow.xib
+cCompileXIB /Users/loganmoseley/Projects/MusicNoteLookup/SecondView.xib
+cCompileXIB /Users/loganmoseley/Projects/MusicNoteLookup/FirstView.xib
+cProcessPCH /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch.gch NoteToFreq_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o /Users/loganmoseley/Projects/MusicNoteLookup/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o /Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o /Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o /Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq normal i386
+cGenerateDSYMFile /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
+cTouch /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
-c000000004C3D35B90000000000000132
-t1279079865
+c000000004C3CD9150000000000000132
+t1279056149
 s306
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
@@ -45,6 +45,129 @@ N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0
 c000000004C0471620000000001D47210
 t1275359586
 s30700048
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/Constants.h
+c000000004C5736F600000000000000C5
+t1280784118
+s197
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.h
+c000000004C5734AC000000000000026C
+t1280783532
+s620
+i<UIKit/UIKit.h>
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m
+c000000004C5736E30000000000000E73
+t1280784099
+s3699
+i"FirstViewController.h"
+i"Constants.h"
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.h
+c000000004C5696A300000000000001DE
+t1280743075
+s478
+i<UIKit/UIKit.h>
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m
+c000000004C5696A30000000000000C3D
+t1280743075
+s3133
+i"NoteToFreqAppDelegate.h"
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.h
+c000000004C5696A3000000000000017E
+t1280743075
+s382
+i<Foundation/Foundation.h>
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m
+c000000004C5696A300000000000001E2
+t1280743075
+s482
+i"note.h"
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/FirstView.xib
+c000000004C5737330000000000005250
+t1280784179
+s21072
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/MainWindow.xib
+c000000004C5696A3000000000000643A
+t1280743075
+s25658
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq_Prefix.pch
+c000000004C5696A300000000000000BD
+t1280743075
+s189
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/SecondView.xib
+c000000004C5696A30000000000005695
+t1280743075
+s22165
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app
+t1280784182
+s272
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM
+t1280784118
+s102
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/FirstView.nib
+t1280784182
+s1487
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/Info.plist
+t1280743075
+s603
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/MainWindow.nib
+t1280743075
+s1697
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
+t1280784118
+s25716
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/PkgInfo
+t1280743075
+s8
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/SecondView.nib
+t1280743075
+s2681
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o
+t1280784118
+s48816
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreq.LinkFileList
+c000000004C5726DB0000000000000238
+t1280779995
+s568
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o
+t1280779997
+s51292
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o
+t1280779997
+s6316
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o
+t1280779997
+s9600
+
+N/Users/loganmoseley/Projects/MusicNoteLookup/main.m
+c000000004C5696A30000000000000164
+t1280743075
+s356
+i<UIKit/UIKit.h>
 
 N/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.h
 c000000004C54C26A000000000000019F
@@ -167,14 +290,31 @@ N/var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/Shared
 t1280528659
 s15232016
 
+N/var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch.gch
+t1280779997
+s15232016
+
 NNoteToFreq-Info.plist
-c000000004C535098000000000000038D
-t1280528536
+c000000004C5696A3000000000000038D
+t1280743075
 s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies302317161#302317161#0(0"0(0#1#0"8600799200#0"0#
+lSLF07#2@18"Check dependencies302476982#302476982#0(0"0(0#1#0"8639857280#0"0#
+
+CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o /Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302476918.596443
+e302476918.689900
+r1
+xCompileC
+xbuild/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o
+x/Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m302476918#302476918#0(0"0(0#0#74"/Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m8666208064#2065"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -I/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/include -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch -c /Users/loganmoseley/Projects/MusicNoteLookup/Classes/FirstViewController.m -o /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o0#
 
 CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o /Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302317129.906977
@@ -193,6 +333,19 @@ o/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m:63: warning:
 o/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m:63: warning: property 'octaveSelector' requires the method 'setOctaveSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation
 lSLF07#2@74"Compile /Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m302317129#302317133#0(874"/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m:63: warning: property 'noteSelector' requires method '-noteSelector' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m:63: warning: property 'noteSelector' requires the method 'setNoteSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m:63: warning: property 'octaveSelector' requires method '-octaveSelector' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m:63: warning: property 'octaveSelector' requires the method 'setOctaveSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation4(22@132"Property 'noteSelector' requires method '-noteSelector' to be defined - use @synthesize, @dynamic or provide a method implementation302317133#0#213#0(6@66"/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m302221336#63#0#63#0#0"0(22@139"Property 'noteSelector' requires the method 'setNoteSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation302317133#213#220#0(6@66"/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m302221336#63#0#63#0#0"0(22@136"Property 'octaveSelector' requires method '-octaveSelector' to be defined - use @synthesize, @dynamic or provide a method implementation302317133#433#217#0(6@66"/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m302221336#63#0#63#0#0"0(22@143"Property 'octaveSelector' requires the method 'setOctaveSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation302317133#650#224#0(6@66"/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m302221336#63#0#63#0#0"0(0#0#66"/Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m8605755520#1977"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -I/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/include -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-djsotljbpbcjmjaidtpljuvqlhqu/NoteToFreq_Prefix.pch -c /Users/sam/Desktop/Music-Note-Lookup/Classes/FirstViewController.m -o /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/FirstViewController.o0#
 
+CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o /Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302472797.711519
+e302472797.851891
+r1
+xCompileC
+xbuild/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o
+x/Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m302472797#302472797#0(0"0(0#0#76"/Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m8680817824#2069"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -I/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/include -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch -c /Users/loganmoseley/Projects/MusicNoteLookup/Classes/NoteToFreqAppDelegate.m -o /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o0#
+
 CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o /Users/sam/Desktop/Music-Note-Lookup/Classes/NoteToFreqAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302221459.778355
 e302221460.089192
@@ -205,6 +358,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@76"Compile /Users/sam/Desktop/Music-Note-Lookup/Classes/NoteToFreqAppDelegate.m302221459#302221460#0(0"0(0#0#68"/Users/sam/Desktop/Music-Note-Lookup/Classes/NoteToFreqAppDelegate.m8598624448#1981"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -I/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/include -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-djsotljbpbcjmjaidtpljuvqlhqu/NoteToFreq_Prefix.pch -c /Users/sam/Desktop/Music-Note-Lookup/Classes/NoteToFreqAppDelegate.m -o /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreqAppDelegate.o0#
+
+CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o /Users/loganmoseley/Projects/MusicNoteLookup/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302472797.710293
+e302472797.831173
+r1
+xCompileC
+xbuild/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o
+x/Users/loganmoseley/Projects/MusicNoteLookup/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/loganmoseley/Projects/MusicNoteLookup/main.m302472797#302472797#0(0"0(0#0#51"/Users/loganmoseley/Projects/MusicNoteLookup/main.m8668345376#2027"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -I/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/include -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch -c /Users/loganmoseley/Projects/MusicNoteLookup/main.m -o /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o0#
 
 CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o /Users/sam/Desktop/Music-Note-Lookup/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302221459.569910
@@ -219,6 +385,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@51"Compile /Users/sam/Desktop/Music-Note-Lookup/main.m302221459#302221460#0(0"0(0#0#43"/Users/sam/Desktop/Music-Note-Lookup/main.m8602611872#1939"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -I/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/include -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-djsotljbpbcjmjaidtpljuvqlhqu/NoteToFreq_Prefix.pch -c /Users/sam/Desktop/Music-Note-Lookup/main.m -o /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/main.o0#
 
+CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o /Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302472797.852024
+e302472797.931089
+r1
+xCompileC
+xbuild/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o
+x/Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m302472797#302472797#0(0"0(0#0#59"/Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m8675973280#2035"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -I/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/include -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch -c /Users/loganmoseley/Projects/MusicNoteLookup/Classes/note.m -o /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o0#
+
 CCompileC build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o /Users/sam/Desktop/Music-Note-Lookup/Classes/note.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s302317161.299160
 e302317161.403269
@@ -231,6 +410,20 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@59"Compile /Users/sam/Desktop/Music-Note-Lookup/Classes/note.m302317161#302317161#0(0"0(0#0#51"/Users/sam/Desktop/Music-Note-Lookup/Classes/note.m8611455648#1947"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -I/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/include -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -include /var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-djsotljbpbcjmjaidtpljuvqlhqu/NoteToFreq_Prefix.pch -c /Users/sam/Desktop/Music-Note-Lookup/Classes/note.m -o /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/note.o0#
+
+CCompileXIB /Users/loganmoseley/Projects/MusicNoteLookup/FirstView.xib
+s302476982.137574
+e302476982.707669
+r1
+xCompileXIB
+x/Users/loganmoseley/Projects/MusicNoteLookup/FirstView.xib
+lSLF07#2@24"CompileXIB FirstView.xib302476982#302476982#0(0"0(0#0#58"/Users/loganmoseley/Projects/MusicNoteLookup/FirstView.xib8627982944#589"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/FirstView.nib /Users/loganmoseley/Projects/MusicNoteLookup/FirstView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/loganmoseley/Projects/MusicNoteLookup/MainWindow.xib
+r0
+
+CCompileXIB /Users/loganmoseley/Projects/MusicNoteLookup/SecondView.xib
+r0
 
 CCompileXIB /Users/sam/Desktop/Music-Note-Lookup/FirstView.xib
 s302317124.126888
@@ -256,6 +449,15 @@ xCompileXIB
 x/Users/sam/Desktop/Music-Note-Lookup/SecondView.xib
 lSLF07#2@25"CompileXIB SecondView.xib302317124#302317129#0(0"0(0#0#51"/Users/sam/Desktop/Music-Note-Lookup/SecondView.xib12666807751278704#567"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/SecondView.nib /Users/sam/Desktop/Music-Note-Lookup/SecondView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
 
+CGenerateDSYMFile /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
+s302476918.721031
+e302476918.758262
+r1
+xGenerateDSYMFile
+x/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM
+x/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
+lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/NoteToFreq.app.dSYM build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq302476918#302476918#0(0"0(0#0#98"/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq8665751392#410"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq -o /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM0#
+
 CGenerateDSYMFile /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
 s302317162.090169
 e302317162.277984
@@ -264,6 +466,16 @@ xGenerateDSYMFile
 x/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM
 x/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
 lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/NoteToFreq.app.dSYM build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq302317162#302317162#0(0"0(0#0#90"/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq8612468800#386"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq -o /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app.dSYM0#
+
+CLd /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq normal i386
+s302476918.690011
+e302476918.720898
+r1
+xLd
+x/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq
+xnormal
+xi386
+lSLF07#2@103"Link /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq302476918#302476918#0(0"0(0#0#0"8665880480#945"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -F/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -filelist /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreq.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq0#
 
 CLd /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq normal i386
 s302317161.403481
@@ -274,6 +486,9 @@ x/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app
 xnormal
 xi386
 lSLF07#2@95"Link /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq302317161#302317162#0(0"0(0#0#0"8612476896#905"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -F/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -filelist /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/Objects-normal/i386/NoteToFreq.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/NoteToFreq0#
+
+CProcessInfoPlistFile /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app/Info.plist NoteToFreq-Info.plist
+r0
 
 CProcessInfoPlistFile /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app/Info.plist NoteToFreq-Info.plist
 s302221437.872480
@@ -296,6 +511,27 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@32"Precompile NoteToFreq_Prefix.pch302221457#302221459#0(0"0(0#0#58"/Users/sam/Desktop/Music-Note-Lookup/NoteToFreq_Prefix.pch8602935456#1830"    cd /Users/sam/Desktop/Music-Note-Lookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator -I/Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/include -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/sam/Desktop/Music-Note-Lookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -c /Users/sam/Desktop/Music-Note-Lookup/NoteToFreq_Prefix.pch -o /var/folders/nF/nFiF2St+GQOo6ey1cwOKwU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-djsotljbpbcjmjaidtpljuvqlhqu/NoteToFreq_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch.gch NoteToFreq_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s302472796.163673
+e302472797.710054
+r1
+xProcessPCH
+x/var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch.gch
+xNoteToFreq_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile NoteToFreq_Prefix.pch302472796#302472797#0(0"0(0#0#66"/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq_Prefix.pch8675780864#1910"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-generated-files.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-own-target-headers.hmap -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-all-target-headers.hmap -iquote /Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/NoteToFreq-project-headers.hmap -F/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator -I/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/include -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources/i386 -I/Users/loganmoseley/Projects/MusicNoteLookup/build/NoteToFreq.build/Debug-iphonesimulator/NoteToFreq.build/DerivedSources -c /Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq_Prefix.pch -o /var/folders/oH/oH5pXvJBGTS2r7mhgx6Vnk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/NoteToFreq_Prefix-bospinrhrskbkjdnhppftfbdjesv/NoteToFreq_Prefix.pch.gch0#
+
+CTouch /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app
+s302476982.708490
+e302476982.728990
+r1
+xTouch
+x/Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app
+lSLF07#2@93"Touch /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app302476982#302476982#0(0"0(0#0#0"8603827456#293"    cd /Users/loganmoseley/Projects/MusicNoteLookup    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/loganmoseley/Projects/MusicNoteLookup/build/Debug-iphonesimulator/NoteToFreq.app0#
 
 CTouch /Users/sam/Desktop/Music-Note-Lookup/build/Debug-iphonesimulator/NoteToFreq.app
 s302317162.278102

@@ -11,13 +11,17 @@
 
 @interface FirstViewController : UIViewController {
 
-	UIPickerView *noteSelector;
-	UIPickerView *octaveSelector;
+	UIPickerView *notePickerView;
+	UIPickerView *octavePickerView;
+	UILabel *outputLabel;
 	
+	NSArray *pickerViewLetterArray;
 }
 
-@property (nonatomic, retain) UIPickerView *noteSelector;
-@property (nonatomic, retain) UIPickerView *octaveSelector;
+@property (nonatomic, retain) IBOutlet UIPickerView *notePickerView;
+@property (nonatomic, retain) IBOutlet UIPickerView *octavePickerView;
+@property (nonatomic, retain) IBOutlet UILabel *outputLabel;
 
+@property (nonatomic, retain) NSArray *pickerViewLetterArray;
 
 @end

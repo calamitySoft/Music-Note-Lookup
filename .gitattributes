@@ -1,0 +1,6 @@
+# PBXProj is an Xcode project file.
+#  Including it here treats it as a binary -- Git won't:
+#  fix newlines, show it in diffs, or include it in merges
+# http://shanesbrain.net/2008/7/9/using-xcode-with-git
+
+*.pbxproj -crlf -diff -merge
