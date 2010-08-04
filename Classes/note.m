@@ -6,29 +6,29 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "note.h"
+#import "Note.h"
 
 
-@implementation note
+@implementation Note
 
 @synthesize hertz, noteName;
 
 -(id)init
 {
-	note *newNote = [[note alloc]initWithNoteName:@"A" withHertz:440];
+	Note *newNote = [[Note alloc] initWithNoteName:@"A" withHertz:440];
 
 	return newNote;
 }
 
--(id)initWithNoteName:(NSString *) doe withHertz:(float)re
+-(id)initWithNoteName:(NSString *)_noteName withHertz:(float)_hertz
 {
 	self = [super init];
 	
 	if(!self)
 		return nil;
 	
-	[self setNoteName:doe];
-	[self setHertz:re];
+	[self setNoteName:_noteName];
+	[self setHertz:_hertz];
 
 	return self;
 }

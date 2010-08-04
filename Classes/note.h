@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface note : NSObject {
+@interface Note : NSObject {
 	
 	float hertz;
 	NSString *noteName;
@@ -19,7 +19,7 @@
 @property (nonatomic) float hertz;
 @property (nonatomic, copy) NSString *noteName;
 
--(id)initWithNoteName:(NSString *)doe withHertz:(float)re;
+-(id)initWithNoteName:(NSString *)_noteName withHertz:(float)_hertz;
 
 
 @end

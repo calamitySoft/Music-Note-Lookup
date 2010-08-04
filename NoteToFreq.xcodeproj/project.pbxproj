@@ -11,7 +11,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		224F80941204FA56007030A2 /* note.m in Sources */ = {isa = PBXBuildFile; fileRef = 224F80931204FA56007030A2 /* note.m */; };
+		224F80941204FA56007030A2 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 224F80931204FA56007030A2 /* Note.m */; };
 		22A5170E1207567C009524FE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5170C1207567C009524FE /* SecondViewController.m */; };
 		28216C970DB411BC00E5133A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FirstViewController.m */; };
 		282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* SecondView.xib */; };
@@ -26,8 +26,8 @@
 		1D3623250D0F684500981E51 /* NoteToFreqAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteToFreqAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* NoteToFreq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteToFreq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		224F80921204FA56007030A2 /* note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = note.h; sourceTree = "<group>"; };
-		224F80931204FA56007030A2 /* note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = note.m; sourceTree = "<group>"; };
+		224F80921204FA56007030A2 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		224F80931204FA56007030A2 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		22A5170B1207567C009524FE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		22A5170C1207567C009524FE /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		28216C950DB411BC00E5133A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -59,13 +59,13 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				224F80921204FA56007030A2 /* note.h */,
-				224F80931204FA56007030A2 /* note.m */,
+				224F80921204FA56007030A2 /* Note.h */,
+				224F80931204FA56007030A2 /* Note.m */,
 				7064EC511207636500D809EA /* Constants.h */,
 				28216C950DB411BC00E5133A /* FirstViewController.h */,
+				28216C960DB411BC00E5133A /* FirstViewController.m */,
 				22A5170B1207567C009524FE /* SecondViewController.h */,
 				22A5170C1207567C009524FE /* SecondViewController.m */,
-				28216C960DB411BC00E5133A /* FirstViewController.m */,
 				1D3623240D0F684500981E51 /* NoteToFreqAppDelegate.h */,
 				1D3623250D0F684500981E51 /* NoteToFreqAppDelegate.m */,
 			);
@@ -180,7 +180,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* NoteToFreqAppDelegate.m in Sources */,
 				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
-				224F80941204FA56007030A2 /* note.m in Sources */,
+				224F80941204FA56007030A2 /* Note.m in Sources */,
 				22A5170E1207567C009524FE /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

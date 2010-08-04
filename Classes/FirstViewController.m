@@ -12,8 +12,8 @@
 
 @implementation FirstViewController
 
-@synthesize notePickerView, octavePickerView;
-@synthesize outputLabel, pickerViewLetterArray;
+@synthesize notePickerView, outputLabel;
+@synthesize pickerViewLetterArray;
 
 
 
@@ -71,7 +71,6 @@
 
 - (void)dealloc {
 	[notePickerView release];
-	[octavePickerView release];
 	[outputLabel release];
 	[pickerViewLetterArray release];
     [super dealloc];
@@ -80,6 +79,12 @@
 #pragma mark -
 #pragma mark UIPickerViewDelegate
 
+/*
+ *	pickerView:didSelectRow:inComponent
+ *
+ *	Reaction to moving the picker.
+ *
+ */
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
 	if (pickerView == notePickerView)	// show selection for the note picker
@@ -95,6 +100,13 @@
 #pragma mark -
 #pragma mark UIPickerViewDataSource
 
+/*
+ *	pickerView:titleForRow:forComponent
+ *	
+ *	Returns:	Text of the picker element at row/component.
+ *	Strategy:	(Row) Selects from the pickerViewLetterArray.
+ *				(Component) Converts the requested row's index to a str.
+ */
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
 	NSString *returnStr = @"";
@@ -107,7 +119,8 @@
 		}
 		// Octave picker
 		else {
-			returnStr = [[NSNumber numberWithInt:row] stringValue];
+			// Converts NSInteger to NSNumber to NSString
+			returnStr = [[NSNumber numberWithInteger:row] stringValue];
 		}
 	}
 	
