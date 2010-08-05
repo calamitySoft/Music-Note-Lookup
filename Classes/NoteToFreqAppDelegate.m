@@ -7,6 +7,7 @@
 //
 
 #import "NoteToFreqAppDelegate.h"
+#import "Constants.h"
 
 
 @implementation NoteToFreqAppDelegate
@@ -100,5 +101,51 @@
     [super dealloc];
 }
 
-@end
 
+#pragma mark -
+#pragma mark Note Delegation
+
+-(NSString *)freqToNote:(float)freq {
+	NSString *retStr = [NSString stringWithFormat:@"freqToNote: %1.4f", freq];
+	return retStr;
+}
+
+/*
+ *	noteToFreq:
+ *
+ *	Arguments:	(NSInteger note) Number representing half-steps up from A0 plus octaves*12.
+ *	Returns:	(float) Hertz value of note.
+ */
+-(float)noteToFreq:(NSInteger)note {
+	float retVal = [self noteToFreqEQScale:note];
+	return retVal;
+}
+
+/*
+ *	noteToFreqEQScale:
+ *
+ *	Purpose:	Implements formula for finding frequency based on the equal tempered scale (i.e. not "just").
+ *	Strategy:	Frequency = fixedNote * a^n
+ *					fixedNote = kFixedNoteA = 440 Hz
+ *					a = the twelfth root of 2
+ *					n = number of half steps from fixedNote
+ *	Returns:	(float) Hertz value of note.
+ *
+ *	Resources:	Frequency formula http://www.phy.mtu.edu/~suits/NoteFreqCalcs.html
+ */
+-(float)noteToFreqEQScale:(NSInteger)note {
+	
+	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
+	NSInteger numHalfSteps = note - 57;
+	
+	// frequency = fixedNote * a^n, where n = number of half steps from fixedNote
+	float retVal = kFixedNoteA * pow(M_12RT_OF_2, numHalfSteps);
+	return retVal;
+	
+//	NSLog(@"FREQUENCY %1.2f, %d", retVal, numHalfSteps);	
+//	return [[NSNumber numberWithInteger:note] floatValue];
+}
+
+
+
+@end

@@ -12,8 +12,8 @@
 
 @implementation FirstViewController
 
-@synthesize notePickerView, outputLabel;
-@synthesize pickerViewLetterArray;
+@synthesize delegate;
+@synthesize notePickerView, outputLabel, pickerViewLetterArray;
 
 
 
@@ -37,13 +37,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	pickerViewLetterArray = [[NSArray arrayWithObjects:
-							  @"A", @"A# / Bb",
-							  @"B", @"B# / Cb",
 							  @"C", @"C# / Db",
 							  @"D", @"D# / Eb",
-							  @"E", @"E# / Fb",
+							  @"E",
 							  @"F", @"F# / Gb",
 							  @"G", @"G# / Ab",
+							  @"A", @"A# / Bb",
+							  @"B",
 							  nil] retain];
 }
 /**/
@@ -82,7 +82,10 @@
 /*
  *	pickerView:didSelectRow:inComponent
  *
- *	Reaction to moving the picker.
+ *	Purpose:	Reaction to moving the picker.
+ *	Strategy:	From note/octave selected, get the number representing half-steps up from A0 plus octaves*12.
+ *				Get the note's frequency from delegate's noteToFreq:
+ *				Set the label to display that frequency.
  *
  */
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
@@ -90,9 +93,18 @@
 	if (pickerView == notePickerView)	// show selection for the note picker
 	{
 		// report the selection to the UI label		
-		outputLabel.text = [NSString stringWithFormat:@"%@ - %d",
+		/*
+		 outputLabel.text = [[NSString stringWithFormat:@"%@ - %d",
 							[pickerViewLetterArray objectAtIndex:[notePickerView selectedRowInComponent:0]],
-							[notePickerView selectedRowInComponent:1]];
+							[notePickerView selectedRowInComponent:1]]
+							
+							stringByAppendingFormat:@" - %@ - %1.2f", [delegate freqToNote:440.12345], [delegate noteToFreq:@"A"]];
+		 */
+		
+		NSInteger noteInteger = [notePickerView selectedRowInComponent:0] +
+								[notePickerView selectedRowInComponent:1] * 12;
+		outputLabel.text = [NSString stringWithFormat:@"%1.4f Hz",
+							[delegate noteToFreq:noteInteger]];
 	}
 }
 
