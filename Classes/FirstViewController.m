@@ -3,7 +3,7 @@
 //  NoteToFreq
 //
 //  Created by Logan Moseley on 7/14/10.
-//  Copyright calamitySoft 2010. All rights reserved.
+//  Copyright 2010 calamitySoft. All rights reserved.
 //
 
 #import "FirstViewController.h"

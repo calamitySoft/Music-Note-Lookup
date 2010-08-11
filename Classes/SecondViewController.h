@@ -3,7 +3,7 @@
 //  NoteToFreq
 //
 //  Created by Sam on 8/2/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 calamitySoft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
