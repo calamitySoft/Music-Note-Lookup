@@ -18,10 +18,12 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) NSMutableArray *noteBank;
 
 -(NSString *)freqToNote:(float)freq;
--(float)noteToFreq:(NSInteger)note;
+-(NSString *)freqToNoteEQScale:(float)freq;
 
+-(float)noteToFreq:(NSInteger)note;
 -(float)noteToFreqEQScale:(NSInteger)note;
 
 

@@ -14,3 +14,4 @@
 
 // MATH CONSTANTS
 #define M_12RT_OF_2			1.059463094359	// Used in frequency calculation.
+											// In (frequency = kFixedNoteA * a^n), this is a.

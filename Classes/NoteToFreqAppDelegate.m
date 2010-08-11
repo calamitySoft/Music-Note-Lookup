@@ -14,6 +14,7 @@
 
 @synthesize window;
 @synthesize tabBarController;
+@synthesize noteBank;
 
 
 #pragma mark -
@@ -105,21 +106,19 @@
 #pragma mark -
 #pragma mark Note Delegation
 
+
+/*
+ *	freqToNote:
+ *
+ *	Purpose:	Convert a frequency to a musical note.
+ *	Arguments:	(float freq) Hertz value of target note.
+ *	Returns:	(NSString) Note name, including #/b if necessary.
+ */
 -(NSString *)freqToNote:(float)freq {
-	NSString *retStr = [NSString stringWithFormat:@"freqToNote: %1.4f", freq];
+	NSString *retStr = [self freqToNoteEQScale:freq];
 	return retStr;
 }
 
-/*
- *	noteToFreq:
- *
- *	Arguments:	(NSInteger note) Number representing half-steps up from A0 plus octaves*12.
- *	Returns:	(float) Hertz value of note.
- */
--(float)noteToFreq:(NSInteger)note {
-	float retVal = [self noteToFreqEQScale:note];
-	return retVal;
-}
 
 /*
  *	noteToFreqEQScale:
@@ -129,6 +128,55 @@
  *					fixedNote = kFixedNoteA = 440 Hz
  *					a = the twelfth root of 2
  *					n = number of half steps from fixedNote
+ *				Above formula derives ours as follows:
+ *					freq = fixed * a^n
+ *					freq/fixed = a^n
+ *					n = log{a}(f)			// log base a of f, where f = frequency/fixedNote
+ *					n = log(f)/log(a)		// log base 10 of f / log base 10 of a
+ *	Arguments:	(float) Hertz value of note.
+ *	Returns:	(NSString) Note name, including #/b if necessary.
+ *
+ *	Resources:	Frequency formula http://www.phy.mtu.edu/~suits/NoteFreqCalcs.html
+ *				Logarithm usage http://en.wikipedia.org/wiki/Logarithm
+ */
+-(NSString *)freqToNoteEQScale:(float)freq {
+	double log_f = log(freq/kFixedNoteA);
+	double log_a = log(M_12RT_OF_2);
+	double n = log_f/log_a;
+	NSLog(@"freq=%1.4f, n=%1.4f", freq, n);	
+
+	// Frequencies are not guaranteed notes, so we must
+	// round to the nearest whole number (half step).
+	n = round(n);
+	NSNumber *numHalfSteps = [NSNumber numberWithInt:n];
+	
+	NSString *retStr = [numHalfSteps stringValue];
+	return retStr;
+}
+
+
+/*
+ *	noteToFreq:
+ *
+ *	Purpose:	Convert a musical note to a frequency.
+ *	Arguments:	(NSInteger note) Number representing half-steps up from A0 plus octaves*12.
+ *	Returns:	(float) Hertz value of note.
+ */
+-(float)noteToFreq:(NSInteger)note {
+	float retVal = [self noteToFreqEQScale:note];
+	return retVal;
+}
+
+
+/*
+ *	noteToFreqEQScale:
+ *
+ *	Purpose:	Implements formula for finding frequency based on the equal tempered scale (i.e. not "just").
+ *	Strategy:	Frequency = fixedNote * a^n
+ *					fixedNote = kFixedNoteA = 440 Hz
+ *					a = the twelfth root of 2
+ *					n = number of half steps from fixedNote
+ *	Arguments:	(NSInteger note) Number representing half-steps up from A0 plus octaves*12.
  *	Returns:	(float) Hertz value of note.
  *
  *	Resources:	Frequency formula http://www.phy.mtu.edu/~suits/NoteFreqCalcs.html
@@ -141,9 +189,6 @@
 	// frequency = fixedNote * a^n, where n = number of half steps from fixedNote
 	float retVal = kFixedNoteA * pow(M_12RT_OF_2, numHalfSteps);
 	return retVal;
-	
-//	NSLog(@"FREQUENCY %1.2f, %d", retVal, numHalfSteps);	
-//	return [[NSNumber numberWithInteger:note] floatValue];
 }
 
 

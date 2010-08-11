@@ -11,6 +11,7 @@
 
 @implementation SecondViewController
 
+@synthesize delegate;
 @synthesize frequency;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -51,12 +52,14 @@
 
 
 - (void)dealloc {
+	[frequency release];
     [super dealloc];
 }
 
 -(IBAction)convertFreqToNote
 {
-	NSLog(@"Converting frequency to note");
+	double freq = 92.4986;
+	NSLog(@"Converting frequency %1.4f Hz to note... %@", freq, [delegate freqToNote:freq]);
 }
 
 
