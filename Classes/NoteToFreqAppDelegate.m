@@ -14,7 +14,11 @@
 
 @synthesize window;
 @synthesize tabBarController;
-@synthesize noteBank;
+@synthesize noteBank, noteLetterArray;
+
+- (NSArray *)getNoteLetterArray {
+	return noteLetterArray;
+}
 
 
 #pragma mark -
@@ -27,6 +31,16 @@
     // Add the tab bar controller's view to the window and display.
     [window addSubview:tabBarController.view];
     [window makeKeyAndVisible];
+	
+	noteLetterArray = [[NSArray arrayWithObjects:
+							  @"C", @"C# / Db",
+							  @"D", @"D# / Eb",
+							  @"E",
+							  @"F", @"F# / Gb",
+							  @"G", @"G# / Ab",
+							  @"A", @"A# / Bb",
+							  @"B",
+							  nil] retain];
 
     return YES;
 }
@@ -97,6 +111,8 @@
 
 
 - (void)dealloc {
+	[noteBank release];
+	[noteLetterArray release];
     [tabBarController release];
     [window release];
     [super dealloc];
@@ -115,7 +131,8 @@
  *	Returns:	(NSString) Note name, including #/b if necessary.
  */
 -(NSString *)freqToNote:(float)freq {
-	NSString *retStr = [self freqToNoteEQScale:freq];
+	NSInteger numHalfStepsFromA4 = [self freqToNoteEQScale:freq];
+	NSString *retStr = [self numStepsToNoteName:numHalfStepsFromA4];
 	return retStr;
 }
 
@@ -134,12 +151,12 @@
  *					n = log{a}(f)			// log base a of f, where f = frequency/fixedNote
  *					n = log(f)/log(a)		// log base 10 of f / log base 10 of a
  *	Arguments:	(float) Hertz value of note.
- *	Returns:	(NSString) Note name, including #/b if necessary.
+ *	Returns:	(NSInteger) Number representing half-steps from A4, positive or negative.
  *
  *	Resources:	Frequency formula http://www.phy.mtu.edu/~suits/NoteFreqCalcs.html
  *				Logarithm usage http://en.wikipedia.org/wiki/Logarithm
  */
--(NSString *)freqToNoteEQScale:(float)freq {
+-(NSInteger)freqToNoteEQScale:(float)freq {
 	double log_f = log(freq/kFixedNoteA);
 	double log_a = log(M_12RT_OF_2);
 	double n = log_f/log_a;
@@ -148,10 +165,31 @@
 	// Frequencies are not guaranteed notes, so we must
 	// round to the nearest whole number (half step).
 	n = round(n);
-	NSNumber *numHalfSteps = [NSNumber numberWithInt:n];
+	NSInteger numHalfSteps = [[NSNumber numberWithInteger:n] integerValue];
 	
-	NSString *retStr = [numHalfSteps stringValue];
-	return retStr;
+//	NSString *retStr = [numHalfSteps stringValue];
+	return numHalfSteps;
+}
+
+
+/*
+ *	numStepsToNoteName:
+ *
+ *	Purpose:	Convert number of half-steps from A4 to a note name.
+ *	Arguments:	(NSInteger) Number representing half-steps from A4, positive or negative.
+ *	Returns:	(NSString) Note name, including #/b if necessary.
+ */
+-(NSString *)numStepsToNoteName:(NSInteger)numHalfStepsAbsolute {
+	
+	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
+	numHalfStepsAbsolute += kFixedNoteHalfSteps;
+	
+	NSInteger note = numHalfStepsAbsolute % [noteLetterArray count];
+	NSInteger octave = numHalfStepsAbsolute / [noteLetterArray count];
+	NSLog(@"halfSteps=%d, note=%d, octave=%d", numHalfStepsAbsolute, note, octave);
+	
+	NSString *noteName = [NSString stringWithFormat:@"%@ %d", [noteLetterArray objectAtIndex:note], octave];
+	return noteName;
 }
 
 
@@ -184,10 +222,10 @@
 -(float)noteToFreqEQScale:(NSInteger)note {
 	
 	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
-	NSInteger numHalfSteps = note - 57;
+	NSInteger numHalfStepsRelative = note - kFixedNoteHalfSteps;
 	
 	// frequency = fixedNote * a^n, where n = number of half steps from fixedNote
-	float retVal = kFixedNoteA * pow(M_12RT_OF_2, numHalfSteps);
+	float retVal = kFixedNoteA * pow(M_12RT_OF_2, numHalfStepsRelative);
 	return retVal;
 }
 

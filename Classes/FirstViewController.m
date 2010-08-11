@@ -36,15 +36,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	pickerViewLetterArray = [[NSArray arrayWithObjects:
-							  @"C", @"C# / Db",
-							  @"D", @"D# / Eb",
-							  @"E",
-							  @"F", @"F# / Gb",
-							  @"G", @"G# / Ab",
-							  @"A", @"A# / Bb",
-							  @"B",
-							  nil] retain];
+	pickerViewLetterArray = [[delegate getNoteLetterArray] retain];
 }
 /**/
 

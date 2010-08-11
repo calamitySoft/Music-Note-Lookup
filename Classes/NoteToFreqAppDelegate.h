@@ -14,14 +14,17 @@
     UITabBarController *tabBarController;
 	
 	NSMutableArray *noteBank;	// The key to the universe
+	NSArray *noteLetterArray;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) NSMutableArray *noteBank;
+@property (nonatomic, retain) NSArray *noteLetterArray;
 
 -(NSString *)freqToNote:(float)freq;
--(NSString *)freqToNoteEQScale:(float)freq;
+-(NSInteger)freqToNoteEQScale:(float)freq;
+-(NSString *)numStepsToNoteName:(NSInteger)numHalfSteps;
 
 -(float)noteToFreq:(NSInteger)note;
 -(float)noteToFreqEQScale:(NSInteger)note;

@@ -28,6 +28,7 @@
 
 
 @protocol AppViewControllerDelegate
+-(NSArray *)getNoteLetterArray;
 -(NSString *)freqToNote:(float)freq;
 -(float)noteToFreq:(NSInteger)note;
 @end

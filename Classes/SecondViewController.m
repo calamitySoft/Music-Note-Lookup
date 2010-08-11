@@ -59,6 +59,7 @@
 -(IBAction)convertFreqToNote
 {
 	double freq = 92.4986;
+//	double freq = 55.0;
 	NSLog(@"Converting frequency %1.4f Hz to note... %@", freq, [delegate freqToNote:freq]);
 }
 
