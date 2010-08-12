@@ -14,11 +14,13 @@
 	id <AppViewControllerDelegate> delegate;
 
 	UITextField *freqTextField;
+	UILabel *noteText;
 	UIButton *converter;
 }
 
 @property (nonatomic, assign) <AppViewControllerDelegate> delegate;
 @property(nonatomic, retain) IBOutlet UITextField *freqTextField;
+@property(nonatomic, retain) IBOutlet UILabel *noteText;
 
 -(IBAction)convertFreqToNote;
 

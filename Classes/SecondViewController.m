@@ -13,6 +13,7 @@
 
 @synthesize delegate;
 @synthesize freqTextField;
+@synthesize noteText;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -63,6 +64,8 @@
 	NSLog(@"Converting frequency %1.4f Hz to note... %@", testFrequency, [delegate freqToNote:testFrequency]);
 	
 	[freqTextField resignFirstResponder];
+	
+	noteText.text = [delegate freqToNote:testFrequency];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {

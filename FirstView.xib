@@ -47,12 +47,9 @@
 						<int key="NSvFlags">306</int>
 						<string key="NSFrame">{{46, 69}, {211, 43}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace">
-								<int key="NSID">2</int>
-							</object>
+						<object class="NSColor" key="IBUIBackgroundColor" id="441316391">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
 						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -66,7 +63,7 @@
 						</object>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
+							<bytes key="NSRGB">MSAwLjUgMAA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -84,10 +81,7 @@
 				</object>
 				<string key="NSFrameSize">{320, 411}</string>
 				<reference key="NSSuperview"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-				</object>
+				<reference key="IBUIBackgroundColor" ref="441316391"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
