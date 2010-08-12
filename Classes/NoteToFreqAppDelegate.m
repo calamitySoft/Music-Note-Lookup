@@ -166,8 +166,6 @@
 	// round to the nearest whole number (half step).
 	n = round(n);
 	NSInteger numHalfSteps = [[NSNumber numberWithInteger:n] integerValue];
-	
-//	NSString *retStr = [numHalfSteps stringValue];
 	return numHalfSteps;
 }
 
@@ -187,8 +185,20 @@
 	NSInteger note = numHalfStepsAbsolute % [noteLetterArray count];
 	NSInteger octave = numHalfStepsAbsolute / [noteLetterArray count];
 	NSLog(@"halfSteps=%d, note=%d, octave=%d", numHalfStepsAbsolute, note, octave);
+
+//	Do I shorten the name of the note? (i.e. 'F# / Gb' -> 'F#')
+#if SHORTEN_FOUND_NOTE
+	NSString *noteLetter;
+	if ([[noteLetterArray objectAtIndex:note] length] > 1) {
+		noteLetter = [[noteLetterArray objectAtIndex:note] substringToIndex:2];
+	} else {
+		noteLetter = [noteLetterArray objectAtIndex:note];
+	}
+#else
+	NSString *noteLetter = [noteLetterArray objectAtIndex:note];
+#endif
 	
-	NSString *noteName = [NSString stringWithFormat:@"%@ %d", [noteLetterArray objectAtIndex:note], octave];
+	NSString *noteName = [NSString stringWithFormat:@"%@%d", noteLetter, octave];
 	return noteName;
 }
 

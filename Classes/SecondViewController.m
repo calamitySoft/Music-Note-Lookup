@@ -12,7 +12,7 @@
 @implementation SecondViewController
 
 @synthesize delegate;
-@synthesize frequency;
+@synthesize freqTextField;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -52,15 +52,24 @@
 
 
 - (void)dealloc {
-	[frequency release];
+	[freqTextField release];
     [super dealloc];
 }
 
 -(IBAction)convertFreqToNote
 {
-	double freq = 92.4986;
-//	double freq = 55.0;
-	NSLog(@"Converting frequency %1.4f Hz to note... %@", freq, [delegate freqToNote:freq]);
+	double testFrequency = 92.4986;
+//	double testFrequency = 55.0;
+	NSLog(@"Converting frequency %1.4f Hz to note... %@", testFrequency, [delegate freqToNote:testFrequency]);
+	
+	[freqTextField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+    if (theTextField == freqTextField) {
+        [freqTextField resignFirstResponder];
+    }
+    return YES;
 }
 
 

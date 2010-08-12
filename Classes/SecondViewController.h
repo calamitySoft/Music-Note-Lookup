@@ -13,12 +13,12 @@
 @interface SecondViewController : UIViewController {
 	id <AppViewControllerDelegate> delegate;
 
-	UITextView *frequency;
+	UITextField *freqTextField;
 	UIButton *converter;
 }
 
 @property (nonatomic, assign) <AppViewControllerDelegate> delegate;
-@property(nonatomic, retain) IBOutlet UITextView *frequency;
+@property(nonatomic, retain) IBOutlet UITextField *freqTextField;
 
 -(IBAction)convertFreqToNote;
 
