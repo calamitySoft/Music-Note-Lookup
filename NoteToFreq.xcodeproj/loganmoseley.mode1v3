@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,8 +271,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>14</integer>
+									<integer>8</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -309,12 +307,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SecondViewController.h</string>
+								<string>SecondViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,27 +322,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SecondViewController.h</string>
+										<string>SecondViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>70D2A4BF12149BEB009AE064</string>
+										<string>70D2A510121535C3009AE064</string>
 										<key>history</key>
 										<array>
 											<string>709E9629120F3D7800043687</string>
 											<string>709E962A120F3D7800043687</string>
 											<string>70D2A20912123882009AE064</string>
-											<string>70D2A22712123964009AE064</string>
 											<string>70D2A23512123A58009AE064</string>
 											<string>70D2A23612123A58009AE064</string>
-											<string>70D2A3A61212610F009AE064</string>
 											<string>70D2A3EE121265C8009AE064</string>
 											<string>70D2A44A12126EC5009AE064</string>
 											<string>70D2A45D12126F69009AE064</string>
-											<string>70D2A4BB12149BEB009AE064</string>
 											<string>70D2A4BC12149BEB009AE064</string>
 											<string>70D2A4BD12149BEB009AE064</string>
-											<string>70D2A4BE12149BEB009AE064</string>
+											<string>70D2A4DD12152EEA009AE064</string>
+											<string>70D2A5011215324E009AE064</string>
+											<string>70D2A50E121535C3009AE064</string>
+											<string>70D2A50F121535C3009AE064</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -400,9 +400,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>70D2A1D4121235C9009AE064</string>
+				<string>70D2A4EA12152EF6009AE064</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>70D2A1D5121235C9009AE064</string>
+				<string>70D2A4EB12152EF6009AE064</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -540,11 +540,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7064EC0912075E6A00D809EA</string>
-		<string>70D2A217121238AD009AE064</string>
-		<string>70D2A21F121238B5009AE064</string>
-		<string>70D2A21212123882009AE064</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7064EC0612075E6A00D809EA</string>
@@ -572,7 +567,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NoteToFreqAppDelegate.m</string>
+								<string>SecondViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -630,7 +625,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>7064EC0612075E6A00D809EA</string>
-				<string>70D2A1D6121235C9009AE064</string>
+				<string>70D2A4EC12152EF6009AE064</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -674,8 +669,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 202}}</string>
-											<string>{{316, 0}, {378, 202}}</string>
+											<string>{{0, 0}, {316, 203}}</string>
+											<string>{{316, 0}, {378, 203}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -690,8 +685,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 202}}</string>
-											<string>{{0, 202}, {694, 179}}</string>
+											<string>{{0, 0}, {694, 203}}</string>
+											<string>{{0, 203}, {694, 178}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -724,7 +719,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 202}}</string>
+									<string>{{316, 0}, {378, 203}}</string>
 									<key>RubberWindowFrame</key>
 									<string>21 333 694 422 0 0 1280 778 </string>
 								</dict>
@@ -752,13 +747,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>70D2A1FB121237E4009AE064</string>
+				<string>70D2A4ED12152EF6009AE064</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>70D2A1FC121237E4009AE064</string>
-				<string>70D2A1FD121237E4009AE064</string>
-				<string>70D2A1FE121237E4009AE064</string>
-				<string>70D2A1FF121237E4009AE064</string>
-				<string>70D2A200121237E4009AE064</string>
+				<string>70D2A4EE12152EF6009AE064</string>
+				<string>70D2A4EF12152EF6009AE064</string>
+				<string>70D2A4F012152EF6009AE064</string>
+				<string>70D2A4F112152EF6009AE064</string>
+				<string>70D2A4F212152EF6009AE064</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -877,8 +872,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -914,7 +907,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>70D2A201121237E4009AE064</string>
+				<string>70D2A4F312152EF6009AE064</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

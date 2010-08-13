@@ -59,13 +59,17 @@
 
 -(IBAction)convertFreqToNote
 {
-	double testFrequency = 92.4986;
-//	double testFrequency = 55.0;
-	NSLog(@"Converting frequency %1.4f Hz to note... %@", testFrequency, [delegate freqToNote:testFrequency]);
+	//	double testFrequency = 92.4986;
+	//	double testFrequency = 55.0;
+	NSString *frequencyStr = [freqTextField text];
+	double testFrequency = [frequencyStr doubleValue];
+	NSString *foundNoteStr = [delegate freqToNote:testFrequency];
 	
-	[freqTextField resignFirstResponder];
-	
+	NSLog(@"Converting frequency %1.4f Hz to note... %@", testFrequency, foundNoteStr);
+
+	freqTextField.text = [frequencyStr stringByAppendingFormat:@" Hz"];	
 	noteText.text = [delegate freqToNote:testFrequency];
+	[freqTextField resignFirstResponder];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
