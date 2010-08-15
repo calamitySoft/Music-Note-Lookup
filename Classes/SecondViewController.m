@@ -59,8 +59,13 @@
 
 -(IBAction)convertFreqToNote
 {
-	double testFrequency = 92.4986;
-//	double testFrequency = 55.0;
+//	double testFrequency = 92.4986;
+	NSNumber *dude = [NSNumber alloc];
+	NSNumberFormatter *dudette = [[NSNumberFormatter alloc] init];
+	[dudette setFormatterBehavior:NSNumberFormatterBehavior10_4];
+	dude = [dudette numberFromString:noteText.text];
+	NSLog(@"Number post conversion: %@, from text: %s", dude, noteText.text);
+	double testFrequency = [dude floatValue];
 	NSLog(@"Converting frequency %1.4f Hz to note... %@", testFrequency, [delegate freqToNote:testFrequency]);
 	
 	[freqTextField resignFirstResponder];
