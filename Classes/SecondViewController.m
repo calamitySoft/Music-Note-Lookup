@@ -16,6 +16,9 @@
 @synthesize freqTextField;
 @synthesize noteText;
 
+// Global to restrict input field to one decimal.
+BOOL decimalUnused = TRUE;
+
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:@"SecondView" bundle:nibBundleOrNil])) {
@@ -95,16 +98,23 @@
 /*
  *	decimal:sender
  *
- *	Append decimal to the current input number.
+ *	Purpose:	Append decimal to the current input number.
  */
 - (void)decimal:(id)sender{
-	freqTextField.text = [freqTextField.text stringByAppendingString:@"."];
+	if (decimalUnused) {
+		freqTextField.text = [freqTextField.text stringByAppendingString:@"."];
+		decimalUnused = !decimalUnused;
+	}
+
 }
 
 #pragma mark Frequency Conversion
 
 -(IBAction)convertFreqToNote
 {
+	// Reset decimalUnused
+	decimalUnused = TRUE;
+	
 	// Parse input and setup formula variables.
 	NSString *frequencyStrIn = [freqTextField text];									// freq # input by user.  Only #s can be input.
 	NSNumber *frequencyNum = [NSNumber numberWithDouble:[frequencyStrIn doubleValue]];	// # usr_in -> NSNumber
@@ -124,7 +134,7 @@
 	NSLog(@"Converting frequency %1.4f Hz to note... %@", frequencyDbl, foundNoteStr);
 
 	// Set UI text views.
-	freqTextField.text = [[frequencyNum stringValue] stringByAppendingFormat:@" Hz"];
+	freqTextField.text = [frequencyStrIn stringByAppendingFormat:@" Hz"];
 	noteText.text = [NSString stringWithFormat:@"%@ \n(%1.4f Hz)", foundNoteStr, [foundNoteFreq floatValue]];
 	
 	// Dismiss number pad.
