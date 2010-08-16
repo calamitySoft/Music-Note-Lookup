@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "Constants.h"
 
 
 @implementation SecondViewController
@@ -60,22 +61,29 @@
 
 -(IBAction)convertFreqToNote
 {
-	NSString *frequencyStrIn = [freqTextField text];				// freq # input by user.  Only #s can be input.
+	// Parse input and setup formula variables.
+	NSString *frequencyStrIn = [freqTextField text];									// freq # input by user.  Only #s can be input.
 	NSNumber *frequencyNum = [NSNumber numberWithDouble:[frequencyStrIn doubleValue]];	// # usr_in -> NSNumber
-	double frequencyDbl = [frequencyNum doubleValue];				// # usr_in -> double
-	NSString *foundNoteStr = [delegate freqToNote:frequencyDbl];	// usr_in -> note name
+	double frequencyDbl = [frequencyNum doubleValue];									// # usr_in -> double
+	
+	// Name of note from user frequency input.
+	NSString *foundNoteStr = [delegate freqToNote:frequencyDbl];
 	
 	// usr_in -> half steps from fixed note (A4)
 	// Necessary for getting the closest (foundNoteStr) note's frequency.
 	// A little hacky using fTNEQScale:  This will have to be changed if
 	//   we implement a Just Temperament scaling option.
-	NSInteger numHalfSteps = [delegate freqToNoteEQScale:frequencyDbl];
-	NSNumber *foundNoteFreq = [NSNumber numberWithFloat:[delegate noteToFreq:numHalfSteps]];	// freq of the found note
+	NSInteger numHalfStepsRelative = [delegate freqToNoteEQScale:frequencyDbl];
+	NSInteger numHalfStepsAbsolute = numHalfStepsRelative + kFixedNoteHalfSteps;	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
+	NSNumber *foundNoteFreq = [NSNumber numberWithFloat:[delegate noteToFreq:numHalfStepsAbsolute]];	// freq of the found note
 	
 	NSLog(@"Converting frequency %1.4f Hz to note... %@", frequencyDbl, foundNoteStr);
 
-	freqTextField.text = [[frequencyNum stringValue] stringByAppendingFormat:@" Hz"];	
-	noteText.text = [NSString stringWithFormat:@"%@ %d (%1.4f Hz)", foundNoteStr, numHalfSteps, [foundNoteFreq floatValue]];
+	// Set UI text views.
+	freqTextField.text = [[frequencyNum stringValue] stringByAppendingFormat:@" Hz"];
+	noteText.text = [NSString stringWithFormat:@"%@ \n(%1.4f Hz)", foundNoteStr, [foundNoteFreq floatValue]];
+	
+	// Dismiss number pad.
 	[freqTextField resignFirstResponder];
 }
 
