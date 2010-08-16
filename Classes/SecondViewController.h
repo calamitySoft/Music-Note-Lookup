@@ -22,9 +22,10 @@
 @property(nonatomic, retain) IBOutlet UITextField *freqTextField;
 @property(nonatomic, retain) IBOutlet UILabel *noteText;
 
--(IBAction)convertFreqToNote;
--(void)decimal;
+-(void)keyboardWillShow:(NSNotification *)note;
 -(void)addButtonToKeyboard;
+-(void)decimal:(id)sender;
+-(IBAction)convertFreqToNote;
 @end
 
 

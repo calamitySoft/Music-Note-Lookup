@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[[NSNotificationCenter defaultCenter] addObserver:self 
-											 selector:@selector(keyboardDidShow:) 
+											 selector:@selector(keyboardWillShow:) 
 												 name:UIKeyboardDidShowNotification 
 											   object:nil];	
 	
@@ -64,6 +64,9 @@
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark Add Decimal Button
+
 - (void)keyboardWillShow:(NSNotification *)note {  
 	[self addButtonToKeyboard];
 }
@@ -89,9 +92,16 @@
 }
 
 
--(void)decimal:(id)sender{
-	NSLog(@"Decimal Button pressed");
+/*
+ *	decimal:sender
+ *
+ *	Append decimal to the current input number.
+ */
+- (void)decimal:(id)sender{
+	freqTextField.text = [freqTextField.text stringByAppendingString:@"."];
 }
+
+#pragma mark Frequency Conversion
 
 -(IBAction)convertFreqToNote
 {
