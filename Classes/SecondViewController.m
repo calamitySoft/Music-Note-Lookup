@@ -74,7 +74,7 @@
 - (void)addButtonToKeyboard {
 	// create custom button
 	UIButton *decimalButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	decimalButton.frame = CGRectMake(0, 163, 106, 53);
+	decimalButton.frame = CGRectMake(-1, 163, 106, 53);	// x, y, width, height
 	decimalButton.adjustsImageWhenHighlighted = NO;
 	[decimalButton setImage:[UIImage imageNamed:@"decimal.png"] forState:UIControlStateNormal];
 	[decimalButton setImage:[UIImage imageNamed:@"decimalDown.png"] forState:UIControlStateHighlighted];
