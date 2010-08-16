@@ -50,49 +50,78 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	22A5170B1207567C009524FE /* SecondViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {859, 455}}";
-			sepNavSelRange = "{560, 0}";
-			sepNavVisRange = "{161, 553}";
-		};
-	};
-	22A5170C1207567C009524FE /* SecondViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1014}}";
-			sepNavSelRange = "{279, 0}";
-			sepNavVisRange = "{0, 665}";
-		};
-	};
-	22B548171214A987008FD436 /* PBXTextBookmark */ = {
+	2230587912189A7B00114D28 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 22A5170B1207567C009524FE /* SecondViewController.h */;
 		name = "SecondViewController.h: 24";
 		rLen = 0;
 		rLoc = 560;
 		rType = 0;
-		vrLen = 553;
+		vrLen = 548;
 		vrLoc = 161;
 	};
-	22B548181214A987008FD436 /* PBXTextBookmark */ = {
+	2230589912189DD600114D28 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incompatible types in initialization";
+		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 67;
+		rType = 1;
+	};
+	2230589B12189DD600114D28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22A5170B1207567C009524FE /* SecondViewController.h */;
+		name = "SecondViewController.h: 24";
+		rLen = 0;
+		rLoc = 560;
+		rType = 0;
+		vrLen = 714;
+		vrLoc = 0;
+	};
+	2230589C12189DD600114D28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
+		name = "SecondViewController.m: 63";
+		rLen = 0;
+		rLoc = 1919;
+		rType = 0;
+		vrLen = 1008;
+		vrLoc = 992;
+	};
+	223058CD1218A8A400114D28 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
 		name = "SecondViewController.m: 68";
 		rLen = 0;
-		rLoc = 1779;
+		rLoc = 1919;
 		rType = 0;
-		vrLen = 546;
-		vrLoc = 1454;
+		vrLen = 782;
+		vrLoc = 1499;
 	};
-	22B548191214A987008FD436 /* PBXTextBookmark */ = {
+	223058CE1218A8A400114D28 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 16";
+		name = "SecondViewController.m: 65";
 		rLen = 0;
-		rLoc = 279;
+		rLoc = 1751;
 		rType = 0;
-		vrLen = 665;
-		vrLoc = 0;
+		vrLen = 1192;
+		vrLoc = 1108;
+	};
+	22A5170B1207567C009524FE /* SecondViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1030, 571}}";
+			sepNavSelRange = "{560, 0}";
+			sepNavVisRange = "{0, 714}";
+		};
+	};
+	22A5170C1207567C009524FE /* SecondViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {859, 1170}}";
+			sepNavSelRange = "{1919, 0}";
+			sepNavVisRange = "{1499, 782}";
+		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -125,13 +154,16 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303343910;
-			PBXWorkspaceStateSaveDate = 303343910;
+			PBXPerProjectTemplateStateSaveDate = 303602108;
+			PBXWorkspaceStateSaveDate = 303602108;
 		};
 		perUserProjectItems = {
-			22B548171214A987008FD436 /* PBXTextBookmark */ = 22B548171214A987008FD436 /* PBXTextBookmark */;
-			22B548181214A987008FD436 /* PBXTextBookmark */ = 22B548181214A987008FD436 /* PBXTextBookmark */;
-			22B548191214A987008FD436 /* PBXTextBookmark */ = 22B548191214A987008FD436 /* PBXTextBookmark */;
+			2230587912189A7B00114D28 /* PBXTextBookmark */ = 2230587912189A7B00114D28 /* PBXTextBookmark */;
+			2230589912189DD600114D28 /* XCBuildMessageTextBookmark */ = 2230589912189DD600114D28 /* XCBuildMessageTextBookmark */;
+			2230589B12189DD600114D28 /* PBXTextBookmark */ = 2230589B12189DD600114D28 /* PBXTextBookmark */;
+			2230589C12189DD600114D28 /* PBXTextBookmark */ = 2230589C12189DD600114D28 /* PBXTextBookmark */;
+			223058CD1218A8A400114D28 /* PBXTextBookmark */ = 223058CD1218A8A400114D28 /* PBXTextBookmark */;
+			223058CE1218A8A400114D28 /* PBXTextBookmark */ = 223058CE1218A8A400114D28 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2205736612149DCE00576755 /* Source Control */;
 		userBuildSettings = {
