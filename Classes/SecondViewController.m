@@ -53,22 +53,29 @@
 
 
 - (void)dealloc {
+	[noteText release];
 	[freqTextField release];
     [super dealloc];
 }
 
 -(IBAction)convertFreqToNote
 {
-	//	double testFrequency = 92.4986;
-	//	double testFrequency = 55.0;
-	NSString *frequencyStr = [freqTextField text];
-	double testFrequency = [frequencyStr doubleValue];
-	NSString *foundNoteStr = [delegate freqToNote:testFrequency];
+	NSString *frequencyStrIn = [freqTextField text];				// freq # input by user.  Only #s can be input.
+	NSNumber *frequencyNum = [NSNumber numberWithDouble:[frequencyStrIn doubleValue]];	// # usr_in -> NSNumber
+	double frequencyDbl = [frequencyNum doubleValue];				// # usr_in -> double
+	NSString *foundNoteStr = [delegate freqToNote:frequencyDbl];	// usr_in -> note name
 	
-	NSLog(@"Converting frequency %1.4f Hz to note... %@", testFrequency, foundNoteStr);
+	// usr_in -> half steps from fixed note (A4)
+	// Necessary for getting the closest (foundNoteStr) note's frequency.
+	// A little hacky using fTNEQScale:  This will have to be changed if
+	//   we implement a Just Temperament scaling option.
+	NSInteger numHalfSteps = [delegate freqToNoteEQScale:frequencyDbl];
+	NSNumber *foundNoteFreq = [NSNumber numberWithFloat:[delegate noteToFreq:numHalfSteps]];	// freq of the found note
+	
+	NSLog(@"Converting frequency %1.4f Hz to note... %@", frequencyDbl, foundNoteStr);
 
-	freqTextField.text = [frequencyStr stringByAppendingFormat:@" Hz"];	
-	noteText.text = [delegate freqToNote:testFrequency];
+	freqTextField.text = [[frequencyNum stringValue] stringByAppendingFormat:@" Hz"];	
+	noteText.text = [NSString stringWithFormat:@"%@ %d (%1.4f Hz)", foundNoteStr, numHalfSteps, [foundNoteFreq floatValue]];
 	[freqTextField resignFirstResponder];
 }
 

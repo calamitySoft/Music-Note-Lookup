@@ -160,10 +160,11 @@
 	double log_f = log(freq/kFixedNoteA);
 	double log_a = log(M_12RT_OF_2);
 	double n = log_f/log_a;
-	NSLog(@"freq=%1.4f, n=%1.4f", freq, n);	
+	/* NSLog(@"freq=%1.4f, n=%1.4f", freq, n);	*/
 
-	// Frequencies are not guaranteed notes, so we must
-	// round to the nearest whole number (half step).
+	// Frequencies are not guaranteed notes, so we must round to the nearest
+	//   whole number (half step).
+	// Must round() first because numberWithInteger just takes the floor of n.
 	n = round(n);
 	NSInteger numHalfSteps = [[NSNumber numberWithInteger:n] integerValue];
 	return numHalfSteps;
@@ -184,7 +185,7 @@
 	
 	NSInteger note = numHalfStepsAbsolute % [noteLetterArray count];
 	NSInteger octave = numHalfStepsAbsolute / [noteLetterArray count];
-	NSLog(@"halfSteps=%d, note=%d, octave=%d", numHalfStepsAbsolute, note, octave);
+	/* NSLog(@"halfSteps=%d, note=%d, octave=%d", numHalfStepsAbsolute, note, octave); */
 
 //	Do I shorten the name of the note? (i.e. 'F# / Gb' -> 'F#')
 #if SHORTEN_FOUND_NOTE
@@ -207,7 +208,7 @@
  *	noteToFreq:
  *
  *	Purpose:	Convert a musical note to a frequency.
- *	Arguments:	(NSInteger note) Number representing half-steps up from A0 plus octaves*12.
+ *	Arguments:	(NSInteger note) Number representing half-steps up from C0 plus octaves*12.
  *	Returns:	(float) Hertz value of note.
  */
 -(float)noteToFreq:(NSInteger)note {
@@ -224,7 +225,7 @@
  *					fixedNote = kFixedNoteA = 440 Hz
  *					a = the twelfth root of 2
  *					n = number of half steps from fixedNote
- *	Arguments:	(NSInteger note) Number representing half-steps up from A0 plus octaves*12.
+ *	Arguments:	(NSInteger note) Number representing half-steps up from C0 plus octaves*12.
  *	Returns:	(float) Hertz value of note.
  *
  *	Resources:	Frequency formula http://www.phy.mtu.edu/~suits/NoteFreqCalcs.html
