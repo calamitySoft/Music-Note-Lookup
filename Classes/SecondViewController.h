@@ -23,7 +23,8 @@
 @property(nonatomic, retain) IBOutlet UILabel *noteText;
 
 -(IBAction)convertFreqToNote;
-
+-(void)decimal;
+-(void)addButtonToKeyboard;
 @end
 
 

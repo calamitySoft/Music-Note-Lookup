@@ -11,6 +11,8 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2227C18D121906AB00B0E357 /* decimalDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2227C18C121906AB00B0E357 /* decimalDown.png */; };
+		2227C18F121906B400B0E357 /* decimal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2227C18E121906B400B0E357 /* decimal.png */; };
 		224F80941204FA56007030A2 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 224F80931204FA56007030A2 /* Note.m */; };
 		22A5170E1207567C009524FE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A5170C1207567C009524FE /* SecondViewController.m */; };
 		28216C970DB411BC00E5133A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FirstViewController.m */; };
@@ -29,6 +31,8 @@
 		1D3623250D0F684500981E51 /* NoteToFreqAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteToFreqAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* NoteToFreq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteToFreq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2227C18C121906AB00B0E357 /* decimalDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decimalDown.png; sourceTree = "<group>"; };
+		2227C18E121906B400B0E357 /* decimal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decimal.png; sourceTree = "<group>"; };
 		224F80921204FA56007030A2 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		224F80931204FA56007030A2 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		22A5170B1207567C009524FE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2227C18E121906B400B0E357 /* decimal.png */,
+				2227C18C121906AB00B0E357 /* decimalDown.png */,
 				709E95E2120F397F00043687 /* Icon.png */,
 				2840D7CD1179279E00D7F93C /* FirstView.xib */,
 				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
@@ -179,6 +185,8 @@
 				70EEB5CC120C8AEE00D056AC /* Find Note icon.png in Resources */,
 				709E95DC120F30F100043687 /* Find Freq Icon.png in Resources */,
 				709E95E3120F397F00043687 /* Icon.png in Resources */,
+				2227C18D121906AB00B0E357 /* decimalDown.png in Resources */,
+				2227C18F121906B400B0E357 /* decimal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

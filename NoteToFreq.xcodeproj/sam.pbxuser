@@ -50,83 +50,65 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	2230587912189A7B00114D28 /* PBXTextBookmark */ = {
+	2227C1B9121909E100B0E357 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2227C18C121906AB00B0E357 /* decimalDown.png */;
+	};
+	2227C1BA121909E100B0E357 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2227C18E121906B400B0E357 /* decimal.png */;
+	};
+	2227C1BB121909E100B0E357 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 22A5170B1207567C009524FE /* SecondViewController.h */;
-		name = "SecondViewController.h: 24";
+		name = "SecondViewController.h: 27";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 634;
 		rType = 0;
-		vrLen = 548;
-		vrLoc = 161;
+		vrLen = 692;
+		vrLoc = 135;
 	};
-	2230589912189DD600114D28 /* XCBuildMessageTextBookmark */ = {
+	2227C1CB12190A7600B0E357 /* XCBuildMessageTextBookmark */ = {
 		isa = PBXTextBookmark;
-		comments = "Incompatible types in initialization";
+		comments = "Incomplete implementation of class 'SecondViewController'";
 		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 67;
+		rLoc = 131;
 		rType = 1;
 	};
-	2230589B12189DD600114D28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22A5170B1207567C009524FE /* SecondViewController.h */;
-		name = "SecondViewController.h: 24";
-		rLen = 0;
-		rLoc = 560;
-		rType = 0;
-		vrLen = 714;
-		vrLoc = 0;
-	};
-	2230589C12189DD600114D28 /* PBXTextBookmark */ = {
+	2227C1CC12190A7600B0E357 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 63";
+		name = "SecondViewController.m: 132";
 		rLen = 0;
-		rLoc = 1919;
+		rLoc = 4471;
 		rType = 0;
-		vrLen = 1008;
-		vrLoc = 992;
-	};
-	223058CD1218A8A400114D28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 68";
-		rLen = 0;
-		rLoc = 1919;
-		rType = 0;
-		vrLen = 782;
-		vrLoc = 1499;
-	};
-	223058CE1218A8A400114D28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 65";
-		rLen = 0;
-		rLoc = 1751;
-		rType = 0;
-		vrLen = 1192;
-		vrLoc = 1108;
+		vrLen = 1120;
+		vrLoc = 3356;
 	};
 	22A5170B1207567C009524FE /* SecondViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1030, 571}}";
-			sepNavSelRange = "{560, 0}";
-			sepNavVisRange = "{0, 714}";
+			sepNavSelRange = "{606, 0}";
+			sepNavVisRange = "{0, 832}";
 		};
 	};
 	22A5170C1207567C009524FE /* SecondViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {859, 1170}}";
-			sepNavSelRange = "{1919, 0}";
-			sepNavVisRange = "{1499, 782}";
+			sepNavIntBoundsRect = "{{0, 0}, {1044, 1638}}";
+			sepNavSelRange = "{4471, 0}";
+			sepNavVisRange = "{3356, 1120}";
+			sepNavWindowFrame = "{{169, 20}, {1089, 699}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2205735712149DCB00576755 /* NoteToFreq */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* NoteToFreq */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* NoteToFreq */,
+		);
 		codeSenseManager = 2205736712149DCE00576755 /* Code sense */;
 		executables = (
 			2205735712149DCB00576755 /* NoteToFreq */,
@@ -137,7 +119,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					681,
+					866,
 					20,
 					48,
 					43,
@@ -154,16 +136,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303602108;
-			PBXWorkspaceStateSaveDate = 303602108;
+			PBXPerProjectTemplateStateSaveDate = 303629062;
+			PBXWorkspaceStateSaveDate = 303629062;
 		};
 		perUserProjectItems = {
-			2230587912189A7B00114D28 /* PBXTextBookmark */ = 2230587912189A7B00114D28 /* PBXTextBookmark */;
-			2230589912189DD600114D28 /* XCBuildMessageTextBookmark */ = 2230589912189DD600114D28 /* XCBuildMessageTextBookmark */;
-			2230589B12189DD600114D28 /* PBXTextBookmark */ = 2230589B12189DD600114D28 /* PBXTextBookmark */;
-			2230589C12189DD600114D28 /* PBXTextBookmark */ = 2230589C12189DD600114D28 /* PBXTextBookmark */;
-			223058CD1218A8A400114D28 /* PBXTextBookmark */ = 223058CD1218A8A400114D28 /* PBXTextBookmark */;
-			223058CE1218A8A400114D28 /* PBXTextBookmark */ = 223058CE1218A8A400114D28 /* PBXTextBookmark */;
+			2227C1B9121909E100B0E357 /* PBXBookmark */ = 2227C1B9121909E100B0E357 /* PBXBookmark */;
+			2227C1BA121909E100B0E357 /* PBXBookmark */ = 2227C1BA121909E100B0E357 /* PBXBookmark */;
+			2227C1BB121909E100B0E357 /* PBXTextBookmark */ = 2227C1BB121909E100B0E357 /* PBXTextBookmark */;
+			2227C1CB12190A7600B0E357 /* XCBuildMessageTextBookmark */ = 2227C1CB12190A7600B0E357 /* XCBuildMessageTextBookmark */;
+			2227C1CC12190A7600B0E357 /* PBXTextBookmark */ = 2227C1CC12190A7600B0E357 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2205736612149DCE00576755 /* Source Control */;
 		userBuildSettings = {

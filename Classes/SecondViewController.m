@@ -24,12 +24,15 @@
     return self;
 }
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(keyboardDidShow:) 
+												 name:UIKeyboardDidShowNotification 
+											   object:nil];	
+	
 }
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -38,6 +41,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
+
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
@@ -50,6 +54,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
@@ -57,6 +62,35 @@
 	[noteText release];
 	[freqTextField release];
     [super dealloc];
+}
+
+- (void)keyboardWillShow:(NSNotification *)note {  
+	[self addButtonToKeyboard];
+}
+	
+- (void)addButtonToKeyboard {
+	// create custom button
+	UIButton *decimalButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	decimalButton.frame = CGRectMake(0, 163, 106, 53);
+	decimalButton.adjustsImageWhenHighlighted = NO;
+	[decimalButton setImage:[UIImage imageNamed:@"decimal.png"] forState:UIControlStateNormal];
+	[decimalButton setImage:[UIImage imageNamed:@"decimalDown.png"] forState:UIControlStateHighlighted];
+	
+	[decimalButton addTarget:self action:@selector(decimal:) forControlEvents:UIControlEventTouchUpInside];
+	// locate keyboard view
+	UIWindow* tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:1];
+	UIView* keyboard;
+	for(int i=0; i<[tempWindow.subviews count]; i++) {
+		keyboard = [tempWindow.subviews objectAtIndex:i];
+		// keyboard found, add the button
+		if([[keyboard description] hasPrefix:@"<UIPeripheralHost"] == YES)
+			[keyboard addSubview:decimalButton];
+	} 
+}
+
+
+-(void)decimal:(id)sender{
+	NSLog(@"Decimal Button pressed");
 }
 
 -(IBAction)convertFreqToNote
