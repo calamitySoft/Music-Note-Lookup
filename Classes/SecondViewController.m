@@ -143,7 +143,7 @@ BOOL decimalUnused = TRUE;
 	NSInteger numHalfStepsAbsolute = numHalfStepsRelative + kFixedNoteHalfSteps;	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
 	NSNumber *foundNoteFreq = [NSNumber numberWithFloat:[delegate noteToFreq:numHalfStepsAbsolute]];	// freq of the found note
 	
-	NSLog(@"Converted frequency %@ Hz to note... %@", 
+	NSLog(@"Converted frequency %@ to note... %@", 
 		  [outputFreqFormatter stringFromNumber:frequencyNum], 
 		  foundNoteStr);
 

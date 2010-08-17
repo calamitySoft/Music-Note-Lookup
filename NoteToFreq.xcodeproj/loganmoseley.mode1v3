@@ -271,8 +271,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>14</integer>
+									<integer>10</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -296,7 +296,7 @@
 							<real>219</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 59 1280 719 0 0 1280 778 </string>
+						<string>0 59 1277 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SecondViewController.m</string>
+								<string>NoteToFreqAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SecondViewController.m</string>
+										<string>NoteToFreqAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>70A78601121A51D900CA3991</string>
+										<string>70A78674121AF66900CA3991</string>
 										<key>history</key>
 										<array>
 											<string>709E9629120F3D7800043687</string>
@@ -339,12 +339,12 @@
 											<string>70D2A4DD12152EEA009AE064</string>
 											<string>70D2A53312153BB1009AE064</string>
 											<string>703BBB1D1218D6FB00AA4E4E</string>
-											<string>70A785681219BD9200CA3991</string>
 											<string>70A785691219BD9200CA3991</string>
 											<string>70A7856A1219BD9200CA3991</string>
-											<string>70A785971219C28500CA3991</string>
-											<string>70A785FC121A51A500CA3991</string>
-											<string>70A785FD121A51A500CA3991</string>
+											<string>70A78609121A535700CA3991</string>
+											<string>70A7860A121A535700CA3991</string>
+											<string>70A7863B121A5DF600CA3991</string>
+											<string>70A78646121A601900CA3991</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,9 +356,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1039, 672}}</string>
+								<string>{{0, 0}, {1036, 672}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 59 1280 719 0 0 1280 778 </string>
+								<string>0 59 1277 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -376,9 +376,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 677}, {1039, 1}}</string>
+								<string>{{0, 677}, {1036, 1}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 59 1280 719 0 0 1280 778 </string>
+								<string>0 59 1277 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -387,7 +387,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1039pt</string>
+					<string>1036pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -545,12 +545,12 @@
 		<string>70A784FA1219333500CA3991</string>
 		<string>70A784F21219330F00CA3991</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>7064EC0612075E6A00D809EA</string>
 		<string>/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 59 1280 719 0 0 1280 778 </string>
+	<string>0 59 1277 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -571,7 +571,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SecondViewController.m</string>
+								<string>NoteToFreqAppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -890,7 +890,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {762, 289}}</string>
 								<key>RubberWindowFrame</key>
-								<string>21 425 762 330 0 0 1280 778 </string>
+								<string>30 448 762 330 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -919,11 +919,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>21 425 762 330 0 0 1280 778 </string>
+			<string>30 448 762 330 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

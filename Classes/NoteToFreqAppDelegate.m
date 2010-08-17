@@ -178,14 +178,23 @@
  *	Arguments:	(NSInteger) Number representing half-steps from A4, positive or negative.
  *	Returns:	(NSString) Note name, including #/b if necessary.
  */
--(NSString *)numStepsToNoteName:(NSInteger)numHalfStepsAbsolute {
+-(NSString *)numStepsToNoteName:(NSInteger)numHalfStepsRelative {
 	
 	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
-	numHalfStepsAbsolute += kFixedNoteHalfSteps;
+	NSInteger numHalfStepsAbsolute = numHalfStepsRelative + kFixedNoteHalfSteps;
+	NSNumber *n = [NSNumber numberWithUnsignedInteger:[noteLetterArray count]];
+	NSInteger noteLetterArrayCount = [n integerValue];
+	NSLog(@"noteLetterArrayCount=%d", noteLetterArrayCount);
 	
-	NSInteger note = numHalfStepsAbsolute % [noteLetterArray count];
-	NSInteger octave = numHalfStepsAbsolute / [noteLetterArray count];
-	/* NSLog(@"halfSteps=%d, note=%d, octave=%d", numHalfStepsAbsolute, note, octave); */
+	NSInteger note = numHalfStepsAbsolute % noteLetterArrayCount;
+	NSInteger octave = numHalfStepsAbsolute / noteLetterArrayCount;
+	NSLog(@"halfSteps=%d, note=%d, octave=%d", numHalfStepsAbsolute, note, octave);
+	
+	// Account for frequencies below C0.
+	// ([NSArray objectAtIndex:uint] requires positive int.)
+	if (note<0) {
+		note += noteLetterArrayCount;
+	}
 
 //	Do I shorten the name of the note? (i.e. 'F# / Gb' -> 'F#')
 #if SHORTEN_FOUND_NOTE

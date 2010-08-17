@@ -24,7 +24,7 @@
 
 -(NSString *)freqToNote:(float)freq;
 -(NSInteger)freqToNoteEQScale:(float)freq;
--(NSString *)numStepsToNoteName:(NSInteger)numHalfSteps;
+-(NSString *)numStepsToNoteName:(NSInteger)numHalfStepsRelative;
 
 -(float)noteToFreq:(NSInteger)note;
 -(float)noteToFreqEQScale:(NSInteger)note;
