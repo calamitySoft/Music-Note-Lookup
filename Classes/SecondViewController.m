@@ -126,6 +126,7 @@ BOOL decimalUnused = TRUE;
 	[outputFreqFormatter setMinimumFractionDigits:4];
 	[outputFreqFormatter setMaximumFractionDigits:4];
 	[outputFreqFormatter setPositiveSuffix:@" Hz"];
+	[outputFreqFormatter setNegativeSuffix:@" Hz"];
 	
 	// Parse input and setup formula variables.
 	NSString *frequencyStrIn = [freqTextField text];									// freq # input by user.  Only #s can be input.
