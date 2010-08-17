@@ -159,13 +159,15 @@ BOOL decimalUnused = TRUE;
 	// Switch statement that formats the output about the distance.
 	switch(result) {
 			// Case that result is negative
-		case NSOrderedAscending: distanceOutput = [NSString stringWithFormat:@"%@ is %@hz away", 
+		case NSOrderedAscending: distanceOutput = [NSString stringWithFormat:@"%@ (%@)\nis %@ away.", 
 												   foundNoteStr, 
+												   [outputFreqFormatter stringFromNumber:foundNoteFreq],
 												   [outputFreqFormatter stringFromNumber:foundNoteDist]];
 			break;
 			// Case that result is positive
-		case NSOrderedDescending: distanceOutput = [NSString stringWithFormat:@"%@ is %@hz above", 
+		case NSOrderedDescending: distanceOutput = [NSString stringWithFormat:@"%@ (%@)\nis %@ above.", 
 													foundNoteStr, 
+													[outputFreqFormatter stringFromNumber:foundNoteFreq],
 													[outputFreqFormatter stringFromNumber:foundNoteDist]];
 			break;
 			// Case that result is equal to 0
