@@ -93,10 +93,20 @@
 							stringByAppendingFormat:@" - %@ - %1.2f", [delegate freqToNote:440.12345], [delegate noteToFreq:@"A"]];
 		 */
 		
+		// Setup formatter for consistent output strings.
+		NSNumberFormatter *outputFreqFormatter = [[NSNumberFormatter alloc] init];
+		[outputFreqFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+		[outputFreqFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+		[outputFreqFormatter setMinimumFractionDigits:4];
+		[outputFreqFormatter setMaximumFractionDigits:4];
+		[outputFreqFormatter setPositiveSuffix:@" Hz"];
+		[outputFreqFormatter setNegativeSuffix:@" Hz"];
+		
 		NSInteger noteInteger = [notePickerView selectedRowInComponent:0] +
 								[notePickerView selectedRowInComponent:1] * 12;
-		outputLabel.text = [NSString stringWithFormat:@"%1.4f Hz",
-							[delegate noteToFreq:noteInteger]];
+		NSNumber *noteNumber = [NSNumber numberWithFloat:[delegate noteToFreq:noteInteger]];
+		outputLabel.text = [NSString stringWithFormat:@"%@",
+							[outputFreqFormatter stringFromNumber:noteNumber]];
 	}
 }
 
