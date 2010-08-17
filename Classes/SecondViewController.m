@@ -146,13 +146,34 @@ BOOL decimalUnused = TRUE;
 	NSLog(@"Converted frequency %@ to note... %@", 
 		  [outputFreqFormatter stringFromNumber:frequencyNum], 
 		  foundNoteStr);
-
+	
+	NSNumber *foundNoteDist = [NSNumber numberWithDouble:([foundNoteFreq doubleValue] - frequencyDbl)];
+	NSComparisonResult result = [foundNoteDist compare:[NSNumber numberWithFloat:0.0]];
+	
 	// Set UI text views.
 	freqTextField.text = [outputFreqFormatter stringFromNumber:frequencyNum];
-	noteText.text = [NSString stringWithFormat:@"%@\n(%@)", 
-					 foundNoteStr, 
-					 [outputFreqFormatter stringFromNumber:foundNoteFreq]];
-		
+	
+	NSString *distanceOutput;
+	
+	// Switch statement that formats the output about the distance.
+	switch(result) {
+			// Case that result is negative
+		case NSOrderedAscending: distanceOutput = [NSString stringWithFormat:@"%@ is %@hz away", 
+												   foundNoteStr, 
+												   [outputFreqFormatter stringFromNumber:foundNoteDist]];
+			break;
+			// Case that result is positive
+		case NSOrderedDescending: distanceOutput = [NSString stringWithFormat:@"%@ is %@hz above", 
+													foundNoteStr, 
+													[outputFreqFormatter stringFromNumber:foundNoteDist]];
+			break;
+			// Case that result is equal to 0
+		case NSOrderedSame: distanceOutput = [NSString stringWithFormat:@"%@", foundNoteStr];
+			break;
+	}
+	
+	noteText.text = distanceOutput;
+	
 	// Dismiss number pad.
 	[freqTextField resignFirstResponder];
 }
