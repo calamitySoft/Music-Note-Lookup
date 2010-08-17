@@ -99,21 +99,33 @@ BOOL decimalUnused = TRUE;
  *	decimal:sender
  *
  *	Purpose:	Append decimal to the current input number.
+ *				The decimal is only appended if it has not already been appended.
+ *	Note:		The decimal usage var is reset in convertFreqToNote: (when the
+ *					convert button is touched).
  */
 - (void)decimal:(id)sender{
 	if (decimalUnused) {
 		freqTextField.text = [freqTextField.text stringByAppendingString:@"."];
 		decimalUnused = !decimalUnused;
 	}
+}
 
+-(IBAction)resetDecimalBool {
+	// Reset decimalUnused
+	decimalUnused = TRUE;
 }
 
 #pragma mark Frequency Conversion
 
 -(IBAction)convertFreqToNote
 {
-	// Reset decimalUnused
-	decimalUnused = TRUE;
+	// Setup formatter for consistent output strings.
+	NSNumberFormatter *outputFreqFormatter = [[NSNumberFormatter alloc] init];
+	[outputFreqFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
+	[outputFreqFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+	[outputFreqFormatter setMinimumFractionDigits:4];
+	[outputFreqFormatter setMaximumFractionDigits:4];
+	[outputFreqFormatter setPositiveSuffix:@" Hz"];
 	
 	// Parse input and setup formula variables.
 	NSString *frequencyStrIn = [freqTextField text];									// freq # input by user.  Only #s can be input.
@@ -131,12 +143,16 @@ BOOL decimalUnused = TRUE;
 	NSInteger numHalfStepsAbsolute = numHalfStepsRelative + kFixedNoteHalfSteps;	// A4 (kFixedNoteA 440Hz) is 57 half steps above C0
 	NSNumber *foundNoteFreq = [NSNumber numberWithFloat:[delegate noteToFreq:numHalfStepsAbsolute]];	// freq of the found note
 	
-	NSLog(@"Converting frequency %1.4f Hz to note... %@", frequencyDbl, foundNoteStr);
+	NSLog(@"Converted frequency %@ Hz to note... %@", 
+		  [outputFreqFormatter stringFromNumber:frequencyNum], 
+		  foundNoteStr);
 
 	// Set UI text views.
-	freqTextField.text = [frequencyStrIn stringByAppendingFormat:@" Hz"];
-	noteText.text = [NSString stringWithFormat:@"%@ \n(%1.4f Hz)", foundNoteStr, [foundNoteFreq floatValue]];
-	
+	freqTextField.text = [outputFreqFormatter stringFromNumber:frequencyNum];
+	noteText.text = [NSString stringWithFormat:@"%@\n(%@)", 
+					 foundNoteStr, 
+					 [outputFreqFormatter stringFromNumber:foundNoteFreq]];
+		
 	// Dismiss number pad.
 	[freqTextField resignFirstResponder];
 }

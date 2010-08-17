@@ -25,6 +25,8 @@
 -(void)keyboardWillShow:(NSNotification *)note;
 -(void)addButtonToKeyboard;
 -(void)decimal:(id)sender;
+-(IBAction)resetDecimalBool;
+
 -(IBAction)convertFreqToNote;
 @end
 

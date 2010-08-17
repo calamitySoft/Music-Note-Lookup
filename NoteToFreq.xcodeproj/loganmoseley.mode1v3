@@ -271,8 +271,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>1</integer>
+									<integer>19</integer>
+									<integer>14</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -326,7 +326,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>70A7854712193A6B00CA3991</string>
+										<string>70A78601121A51D900CA3991</string>
 										<key>history</key>
 										<array>
 											<string>709E9629120F3D7800043687</string>
@@ -338,13 +338,13 @@
 											<string>70D2A45D12126F69009AE064</string>
 											<string>70D2A4DD12152EEA009AE064</string>
 											<string>70D2A53312153BB1009AE064</string>
-											<string>703BBB1C1218D6FB00AA4E4E</string>
 											<string>703BBB1D1218D6FB00AA4E4E</string>
-											<string>70A7852C1219396700CA3991</string>
-											<string>70A7853B12193A1100CA3991</string>
-											<string>70A7853C12193A1100CA3991</string>
-											<string>70A7853D12193A1100CA3991</string>
-											<string>70A7852D1219396700CA3991</string>
+											<string>70A785681219BD9200CA3991</string>
+											<string>70A785691219BD9200CA3991</string>
+											<string>70A7856A1219BD9200CA3991</string>
+											<string>70A785971219C28500CA3991</string>
+											<string>70A785FC121A51A500CA3991</string>
+											<string>70A785FD121A51A500CA3991</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -545,8 +545,8 @@
 		<string>70A784FA1219333500CA3991</string>
 		<string>70A784F21219330F00CA3991</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>7064EC0612075E6A00D809EA</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>7064EC0612075E6A00D809EA</string>
 		<string>/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -923,7 +923,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
