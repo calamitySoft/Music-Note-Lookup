@@ -19,8 +19,8 @@
 }
 
 @property (nonatomic, assign) <AppViewControllerDelegate> delegate;
-@property(nonatomic, retain) IBOutlet UITextField *freqTextField;
-@property(nonatomic, retain) IBOutlet UILabel *noteText;
+@property (nonatomic, retain) IBOutlet UITextField *freqTextField;
+@property (nonatomic, retain) IBOutlet UILabel *noteText;
 
 -(void)keyboardWillShow:(NSNotification *)note;
 -(void)addButtonToKeyboard;
