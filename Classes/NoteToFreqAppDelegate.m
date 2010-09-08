@@ -157,6 +157,16 @@
  *				Logarithm usage http://en.wikipedia.org/wiki/Logarithm
  */
 -(NSInteger)freqToNoteEQScale:(float)freq {
+	NSInteger numHalfSteps;
+	if (freq < 16.3516) {
+		numHalfSteps = -57;
+	}
+	else if(freq > 31608.5312)
+	{
+		numHalfSteps = 74;
+	}
+	else
+	{
 	double log_f = log(freq/kFixedNoteA);
 	double log_a = log(M_12RT_OF_2);
 	double n = log_f/log_a;
@@ -165,8 +175,10 @@
 	// Frequencies are not guaranteed notes, so we must round to the nearest
 	//   whole number (half step).
 	// Must round() first because numberWithInteger just takes the floor of n.
+	
 	n = round(n);
-	NSInteger numHalfSteps = [[NSNumber numberWithInteger:n] integerValue];
+	numHalfSteps = [[NSNumber numberWithInteger:n] integerValue];
+	}
 	return numHalfSteps;
 }
 
