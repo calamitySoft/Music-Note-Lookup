@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -309,12 +307,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FirstViewController.m</string>
+								<string>SecondViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FirstViewController.m</string>
+										<string>SecondViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7024E5D6123834A500E9E5D2</string>
+										<string>7022B085123CAB89009895B1</string>
 										<key>history</key>
 										<array>
 											<string>709E9629120F3D7800043687</string>
@@ -338,14 +338,14 @@
 											<string>70D2A4DD12152EEA009AE064</string>
 											<string>70A785691219BD9200CA3991</string>
 											<string>70A7856A1219BD9200CA3991</string>
-											<string>70CEFB7A121F21A9000D0EDD</string>
 											<string>70CEFB7B121F21A9000D0EDD</string>
-											<string>70CEFB7C121F21A9000D0EDD</string>
-											<string>70CEFB89121F2380000D0EDD</string>
 											<string>70CEFBF4121F27D4000D0EDD</string>
 											<string>7024E5D4123834A500E9E5D2</string>
-											<string>7024E5D5123834A500E9E5D2</string>
-											<string>70CEFBF3121F27D4000D0EDD</string>
+											<string>7022B016123B044B009895B1</string>
+											<string>7022B017123B044B009895B1</string>
+											<string>7022B018123B044B009895B1</string>
+											<string>7022B083123CAB89009895B1</string>
+											<string>7022B084123CAB89009895B1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -403,9 +403,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7024E5D7123834A500E9E5D2</string>
+				<string>7022B080123CAAFA009895B1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7024E5D8123834A500E9E5D2</string>
+				<string>7022B081123CAAFA009895B1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -543,8 +543,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7064EC0612075E6A00D809EA</string>
 		<string>/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq.xcodeproj</string>
 	</array>
@@ -626,7 +624,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>7064EC0612075E6A00D809EA</string>
-				<string>7024E5D9123834A500E9E5D2</string>
+				<string>7022B082123CAAFA009895B1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

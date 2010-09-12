@@ -96,7 +96,7 @@ BOOL decimalUnused = TRUE;
 
 
 /*
- *	decimal:sender
+ *	decimal
  *
  *	Purpose:	Append decimal to the current input number.
  *				The decimal is only appended if it has not already been appended.
