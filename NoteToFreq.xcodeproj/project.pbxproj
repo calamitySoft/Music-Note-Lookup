@@ -265,6 +265,7 @@
 				GCC_PREFIX_HEADER = NoteToFreq_Prefix.pch;
 				INFOPLIST_FILE = "NoteToFreq-Info.plist";
 				PRODUCT_NAME = NoteToFreq;
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Debug;
 		};
