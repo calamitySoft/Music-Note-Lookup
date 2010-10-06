@@ -127,6 +127,7 @@ BOOL decimalUnused = TRUE;
 	[outputFreqFormatter setMaximumFractionDigits:4];
 	[outputFreqFormatter setPositiveSuffix:@" Hz"];
 	[outputFreqFormatter setNegativeSuffix:@" Hz"];
+	[outputFreqFormatter setNegativePrefix:@""];
 	
 	// Parse input and setup formula variables.
 	NSString *frequencyStrIn = [freqTextField text];									// freq # input by user.  Only #s can be input.
@@ -159,7 +160,7 @@ BOOL decimalUnused = TRUE;
 	// Switch statement that formats the output about the distance.
 	switch(result) {
 			// Case that result is negative
-		case NSOrderedAscending: distanceOutput = [NSString stringWithFormat:@"%@ (%@)\nis %@ away.", 
+		case NSOrderedAscending: distanceOutput = [NSString stringWithFormat:@"%@ (%@)\nis %@ below.", 
 												   foundNoteStr, 
 												   [outputFreqFormatter stringFromNumber:foundNoteFreq],
 												   [outputFreqFormatter stringFromNumber:foundNoteDist]];
