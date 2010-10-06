@@ -1,4 +1,6 @@
-Musical Frequency Lookup Kit is a small app allows the user to translate Frequencies to musical notes and vice versa.
+Need to know the frequency of A#? Wanna see which musical note is closest in pitch to what your oscilloscope is outputting? Look no further than HertzToNoteS! This handy app is an invaluable tool for people in the audio engineering industry, and a fun little app for everyone else to play around with.
 
-Direct link to the spec doc:
-http://sites.google.com/site/calamitydev/file-cabinet/MusicalFrequencyLookupKit.doc?attredirects=0&d=1
+Features:
+-Full, easy to use interface for finding the Hertz frequencies.
+-HertzToNote function helps you easily identify which note your frequency is.
+-HertzToNote function calculates the distance to the nearest note if your frequency does match a note.
