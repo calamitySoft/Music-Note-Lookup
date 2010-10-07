@@ -20,7 +20,8 @@
 		2840D7CE1179279E00D7F93C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2840D7CD1179279E00D7F93C /* FirstView.xib */; };
 		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
 		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
-		7026CA0912583C6C00D55D8D /* 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 7026CA0112583C6C00D55D8D /* 512.png */; };
+		700F696B125DCFAD003CA417 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 700F6968125DCF8A003CA417 /* Entitlements.plist */; };
+		7026CA0912583C6C00D55D8D /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 7026CA0112583C6C00D55D8D /* iTunesArtwork */; };
 		7026CA0A12583C6C00D55D8D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7026CA0212583C6C00D55D8D /* Default.png */; };
 		7026CA0B12583C6C00D55D8D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7026CA0312583C6C00D55D8D /* Icon-72.png */; };
 		7026CA0C12583C6C00D55D8D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7026CA0412583C6C00D55D8D /* Icon-Small-50.png */; };
@@ -52,8 +53,8 @@
 		28A0AB4B0D9B1048005BE974 /* NoteToFreq_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteToFreq_Prefix.pch; sourceTree = "<group>"; };
 		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7026C9ED1258399B00D55D8D /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		7026CA0112583C6C00D55D8D /* 512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512.png; sourceTree = "<group>"; };
+		700F6968125DCF8A003CA417 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		7026CA0112583C6C00D55D8D /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		7026CA0212583C6C00D55D8D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7026CA0312583C6C00D55D8D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		7026CA0412583C6C00D55D8D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -113,7 +114,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				7026C9ED1258399B00D55D8D /* Entitlements.plist */,
+				700F6968125DCF8A003CA417 /* Entitlements.plist */,
 			);
 			name = NoteToFreq;
 			sourceTree = "<group>";
@@ -156,7 +157,7 @@
 		7026CA0012583C6C00D55D8D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				7026CA0112583C6C00D55D8D /* 512.png */,
+				7026CA0112583C6C00D55D8D /* iTunesArtwork */,
 				7026CA0212583C6C00D55D8D /* Default.png */,
 				7026CA0312583C6C00D55D8D /* Icon-72.png */,
 				7026CA0412583C6C00D55D8D /* Icon-Small-50.png */,
@@ -224,7 +225,7 @@
 				709E95DC120F30F100043687 /* Find Freq Icon.png in Resources */,
 				2227C18D121906AB00B0E357 /* decimalDown.png in Resources */,
 				2227C18F121906B400B0E357 /* decimal.png in Resources */,
-				7026CA0912583C6C00D55D8D /* 512.png in Resources */,
+				7026CA0912583C6C00D55D8D /* iTunesArtwork in Resources */,
 				7026CA0A12583C6C00D55D8D /* Default.png in Resources */,
 				7026CA0B12583C6C00D55D8D /* Icon-72.png in Resources */,
 				7026CA0C12583C6C00D55D8D /* Icon-Small-50.png in Resources */,
@@ -232,6 +233,7 @@
 				7026CA0E12583C6C00D55D8D /* Icon-Small@2x.png in Resources */,
 				7026CA0F12583C6C00D55D8D /* Icon.png in Resources */,
 				7026CA1012583C6C00D55D8D /* Icon@2x.png in Resources */,
+				700F696B125DCFAD003CA417 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,17 +276,52 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "~/Projects/MusicNoteLookup/Entitlements.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NoteToFreq_Prefix.pch;
 				INFOPLIST_FILE = "NoteToFreq-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				PRODUCT_NAME = NoteToFreq;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7026C9E0125837EF00D55D8D /* App Store Distribution */ = {
+		700F6957125DCE6D003CA417 /* Ad Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Logan Moseley (BW5L72G88N)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AE7FF5F1-C215-4913-AB6A-6CD70A7E466A";
+				SDKROOT = iphoneos4.1;
+			};
+			name = "Ad Hoc Distribution";
+		};
+		700F6958125DCE6D003CA417 /* Ad Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CalamitySoft";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NoteToFreq_Prefix.pch;
+				INFOPLIST_FILE = "NoteToFreq-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				PRODUCT_NAME = NoteToFreq;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50BA171B-D83D-4279-B725-0AA11F4CC6ED";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc Distribution";
+		};
+		700F6959125DCE6E003CA417 /* App Store Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -300,11 +337,11 @@
 			};
 			name = "App Store Distribution";
 		};
-		7026C9E1125837EF00D55D8D /* App Store Distribution */ = {
+		700F695A125DCE6E003CA417 /* App Store Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = "~/Projects/MusicNoteLookup/Entitlements.plist";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CalamitySoft";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -317,50 +354,17 @@
 			};
 			name = "App Store Distribution";
 		};
-		7026C9E41258382D00D55D8D /* Ad Hoc Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Logan Moseley (BW5L72G88N)";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AE7FF5F1-C215-4913-AB6A-6CD70A7E466A";
-				SDKROOT = iphoneos4.1;
-			};
-			name = "Ad Hoc Distribution";
-		};
-		7026C9E51258382D00D55D8D /* Ad Hoc Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = "~/Projects/MusicNoteLookup/Entitlements.plist";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CalamitySoft";
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = NoteToFreq_Prefix.pch;
-				INFOPLIST_FILE = "NoteToFreq-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				PRODUCT_NAME = NoteToFreq;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "199105E7-C965-4AAF-BF49-F10DD817B000";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Ad Hoc Distribution";
-		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Logan Moseley (BW5L72G88N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AE7FF5F1-C215-4913-AB6A-6CD70A7E466A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
@@ -389,8 +393,8 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-				7026C9E1125837EF00D55D8D /* App Store Distribution */,
-				7026C9E51258382D00D55D8D /* Ad Hoc Distribution */,
+				700F6958125DCE6D003CA417 /* Ad Hoc Distribution */,
+				700F695A125DCE6E003CA417 /* App Store Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -400,8 +404,8 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-				7026C9E0125837EF00D55D8D /* App Store Distribution */,
-				7026C9E41258382D00D55D8D /* Ad Hoc Distribution */,
+				700F6957125DCE6D003CA417 /* Ad Hoc Distribution */,
+				700F6959125DCE6E003CA417 /* App Store Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
