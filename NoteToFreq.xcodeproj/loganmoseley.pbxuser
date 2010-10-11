@@ -44,7 +44,7 @@
 	};
 	22A5170C1207567C009524FE /* SecondViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 2587}}";
+			sepNavIntBoundsRect = "{{0, 0}, {975, 2509}}";
 			sepNavSelRange = "{4611, 0}";
 			sepNavVisRange = "{3381, 1627}";
 			sepNavWindowFrame = "{{190, 4}, {970, 774}}";
@@ -193,8 +193,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 308467937;
-			PBXWorkspaceStateSaveDate = 308467937;
+			PBXPerProjectTemplateStateSaveDate = 308474237;
+			PBXWorkspaceStateSaveDate = 308474237;
 		};
 		perUserProjectItems = {
 			700F66B31259F7B8003CA417 = 700F66B31259F7B8003CA417 /* PBXBookmark */;
@@ -211,25 +211,24 @@
 			700F67FF125D0C29003CA417 = 700F67FF125D0C29003CA417 /* PBXTextBookmark */;
 			700F6800125D0C29003CA417 = 700F6800125D0C29003CA417 /* PBXTextBookmark */;
 			700F6801125D0C29003CA417 = 700F6801125D0C29003CA417 /* PBXTextBookmark */;
-			700F68D0125DBCB2003CA417 = 700F68D0125DBCB2003CA417 /* PBXTextBookmark */;
 			700F696D125DCFB1003CA417 = 700F696D125DCFB1003CA417 /* PBXBookmark */;
-			700F696E125DCFB1003CA417 = 700F696E125DCFB1003CA417 /* PlistBookmark */;
-			700F6998125DD5D1003CA417 = 700F6998125DD5D1003CA417 /* PlistBookmark */;
 			7026C9CA1258259500D55D8D = 7026C9CA1258259500D55D8D /* PBXBookmark */;
 			7026CA391258414100D55D8D = 7026CA391258414100D55D8D /* PBXTextBookmark */;
-			704147291262DB58007CF773 /* PlistBookmark */ = 704147291262DB58007CF773 /* PlistBookmark */;
-			7041474D1262DFEE007CF773 /* PlistBookmark */ = 7041474D1262DFEE007CF773 /* PlistBookmark */;
-			7041474E1262DFEE007CF773 /* PBXTextBookmark */ = 7041474E1262DFEE007CF773 /* PBXTextBookmark */;
-			7041474F1262DFEE007CF773 /* PBXTextBookmark */ = 7041474F1262DFEE007CF773 /* PBXTextBookmark */;
-			704147541262E002007CF773 /* PlistBookmark */ = 704147541262E002007CF773 /* PlistBookmark */;
-			704147551262E002007CF773 /* PBXTextBookmark */ = 704147551262E002007CF773 /* PBXTextBookmark */;
-			704147561262E002007CF773 /* PBXTextBookmark */ = 704147561262E002007CF773 /* PBXTextBookmark */;
+			704147541262E002007CF773 = 704147541262E002007CF773 /* PlistBookmark */;
+			704147551262E002007CF773 = 704147551262E002007CF773 /* PBXTextBookmark */;
+			7041478C1262F0F0007CF773 = 7041478C1262F0F0007CF773 /* PBXTextBookmark */;
 			709E9629120F3D7800043687 = 709E9629120F3D7800043687 /* PBXBookmark */;
 			70A785691219BD9200CA3991 = 70A785691219BD9200CA3991 /* PBXBookmark */;
 			70D2A23512123A58009AE064 = 70D2A23512123A58009AE064 /* PBXTextBookmark */;
 			70D2A23612123A58009AE064 = 70D2A23612123A58009AE064 /* PBXTextBookmark */;
 			70D2A45D12126F69009AE064 = 70D2A45D12126F69009AE064 /* PBXTextBookmark */;
 			70D2A4DD12152EEA009AE064 = 70D2A4DD12152EEA009AE064 /* PBXTextBookmark */;
+			70EAF2711262F1880085A653 /* PBXTextBookmark */ = 70EAF2711262F1880085A653 /* PBXTextBookmark */;
+			70EAF2721262F1880085A653 /* PlistBookmark */ = 70EAF2721262F1880085A653 /* PlistBookmark */;
+			70EAF2911262F69A0085A653 /* PlistBookmark */ = 70EAF2911262F69A0085A653 /* PlistBookmark */;
+			70EAF2921262F69A0085A653 /* PlistBookmark */ = 70EAF2921262F69A0085A653 /* PlistBookmark */;
+			70EAF2931262F69A0085A653 /* PlistBookmark */ = 70EAF2931262F69A0085A653 /* PlistBookmark */;
+			70EAF2A21262F6EE0085A653 /* PlistBookmark */ = 70EAF2A21262F6EE0085A653 /* PlistBookmark */;
 		};
 		sourceControlManager = 7068D32A11EE8DAC0018F2F2 /* Source Control */;
 		userBuildSettings = {
@@ -336,17 +335,13 @@
 		vrLen = 923;
 		vrLoc = 0;
 	};
-	700F68D0125DBCB2003CA417 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 111";
-		rLen = 0;
-		rLoc = 3382;
-		rType = 0;
-		vrLen = 2087;
-		vrLoc = 4545;
-	};
 	700F6968125DCF8A003CA417 /* Entitlements.plist */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.plist.xml;
+		name = Entitlements.plist;
+		path = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavWindowFrame = "{{15, 4}, {970, 774}}";
 		};
@@ -354,29 +349,6 @@
 	700F696D125DCFB1003CA417 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 7026CA0112583C6C00D55D8D /* iTunesArtwork */;
-	};
-	700F696E125DCFB1003CA417 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 700F6968125DCF8A003CA417 /* Entitlements.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	700F6998125DD5D1003CA417 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 700F6968125DCF8A003CA417 /* Entitlements.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			"get-task-allow",
-		);
-		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
-		rLen = 0;
-		rLoc = 9223372036854775808;
 	};
 	7026C9CA1258259500D55D8D /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -392,50 +364,6 @@
 		vrLen = 502;
 		vrLoc = 0;
 	};
-	704147291262DB58007CF773 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 700F6968125DCF8A003CA417 /* Entitlements.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			"get-task-allow",
-		);
-		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	7041474D1262DFEE007CF773 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 700F6968125DCF8A003CA417 /* Entitlements.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-			"get-task-allow",
-		);
-		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	7041474E1262DFEE007CF773 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 111";
-		rLen = 0;
-		rLoc = 3382;
-		rType = 0;
-		vrLen = 1850;
-		vrLoc = 4545;
-	};
-	7041474F1262DFEE007CF773 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
-		name = "SecondViewController.m: 141";
-		rLen = 0;
-		rLoc = 4611;
-		rType = 0;
-		vrLen = 1630;
-		vrLoc = 3378;
-	};
 	704147541262E002007CF773 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 700F6968125DCF8A003CA417 /* Entitlements.plist */;
@@ -446,7 +374,7 @@
 		);
 		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	704147551262E002007CF773 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -458,7 +386,7 @@
 		vrLen = 1627;
 		vrLoc = 3381;
 	};
-	704147561262E002007CF773 /* PBXTextBookmark */ = {
+	7041478C1262F0F0007CF773 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
 		name = "SecondViewController.m: 141";
@@ -569,5 +497,72 @@
 		rType = 0;
 		vrLen = 392;
 		vrLoc = 0;
+	};
+	70EAF2711262F1880085A653 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22A5170C1207567C009524FE /* SecondViewController.m */;
+		name = "SecondViewController.m: 141";
+		rLen = 0;
+		rLoc = 4611;
+		rType = 0;
+		vrLen = 1627;
+		vrLoc = 3381;
+	};
+	70EAF2721262F1880085A653 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* NoteToFreq-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleName,
+		);
+		name = "/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq-Info.plist";
+		rLen = 0;
+		rLoc = 0;
+	};
+	70EAF2911262F69A0085A653 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* NoteToFreq-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = "/Users/loganmoseley/Projects/MusicNoteLookup/NoteToFreq-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	70EAF2921262F69A0085A653 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 70EAF28F1262F6880085A653 /* Entitlements.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	70EAF2931262F69A0085A653 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 70EAF28F1262F6880085A653 /* Entitlements.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	70EAF2A21262F6EE0085A653 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 70EAF28F1262F6880085A653 /* Entitlements.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/loganmoseley/Projects/MusicNoteLookup/Entitlements.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 }
