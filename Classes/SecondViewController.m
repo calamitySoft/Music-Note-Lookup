@@ -134,6 +134,13 @@ BOOL decimalUnused = TRUE;
 	NSNumber *frequencyNum = [NSNumber numberWithDouble:[frequencyStrIn doubleValue]];	// # usr_in -> NSNumber
 	double frequencyDbl = [frequencyNum doubleValue];									// # usr_in -> double
 	
+	// Restrict input to 1,000,000 Hz for the sake of the output string.
+	// B10 is only 31,608.5312 Hz, so a million should be more than enough.
+	if (frequencyDbl > 1000000.0) {
+		frequencyDbl = 1000000.0;
+		frequencyNum = [NSNumber numberWithDouble:frequencyDbl];
+	}
+	
 	// Name of note from user frequency input.
 	NSString *foundNoteStr = [delegate freqToNote:frequencyDbl];
 	

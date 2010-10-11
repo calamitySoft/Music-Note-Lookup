@@ -115,7 +115,7 @@
 					<object class="IBUILabel" id="301754504">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 244}, {280, 62}}</string>
+						<string key="NSFrame">{{20, 244}, {280, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="IBUIBackgroundColor" ref="753695724"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -132,7 +132,7 @@
 						<float key="IBUIMinimumFontSize">25</float>
 						<int key="IBUINumberOfLines">0</int>
 						<int key="IBUITextAlignment">1</int>
-						<int key="IBUILineBreakMode">1</int>
+						<int key="IBUILineBreakMode">0</int>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 411}</string>
