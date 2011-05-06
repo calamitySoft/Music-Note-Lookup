@@ -1,4 +1,8 @@
 Need to know the frequency of A#? Wanna see which musical note is closest in pitch to what your oscilloscope is outputting? Look no further than HertzToNoteS! This handy app is an invaluable tool for people in the audio engineering industry, and a fun little app for everyone else to play around with.
-Features include:-Full, easy to use interface for finding the Hertz frequency for a note.-”Find Note” tab helps you easily identify which note your frequency is.-”Find Note” calculates the distance to the nearest note if your frequency does match a note.
+
+Features include:
+- Full, easy to use interface for finding the Hertz frequency for a note.
+- "Find Note" tab helps you easily identify which note your frequency is.
+- "Find Note" calculates the distance to the nearest note if your frequency does match a note.
 
 HertzToNoteS works with notes C0 through B10.
